@@ -39,7 +39,8 @@ jobs:
       - name: Do the build
         run: |
           set -ex
-          ./build.sh
+              chmod +x gradlew
+
 
       - name: Push changes to default target branch
         run: |
