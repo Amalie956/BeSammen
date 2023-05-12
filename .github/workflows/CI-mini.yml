@@ -1,4 +1,4 @@
-name: CI-mini
+name: CI-mini.yml
 
 on:
   push:
