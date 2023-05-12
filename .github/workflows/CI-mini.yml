@@ -38,8 +38,9 @@ jobs:
           
       - name: Do the build
         run: |
-          echo This is where you run the build
-        
+          set -ex
+          ./gradlew build
+
       - name: Push changes to default target branch
         run: |
           set -ex
