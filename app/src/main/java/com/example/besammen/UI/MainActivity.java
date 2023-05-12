@@ -1,8 +1,10 @@
-package com.example.besammen;
+package com.example.besammen.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.besammen.R;
 
 public class MainActivity extends AppCompatActivity {
 
