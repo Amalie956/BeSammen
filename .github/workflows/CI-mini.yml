@@ -1,0 +1,48 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - master
+      
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  ORIGIN: origin
+
+permissions:
+  contents: write
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Tell git who we are
+        run: |
+          set -ex
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
+          git config --global advice.skippedCherryPicks false
+
+      - name: Rebased against default target branch
+        run: |
+          set -ex
+          TARGET_BRANCH=$( gh repo view --json defaultBranchRef --jq .defaultBranchRef.name )
+          git rebase ${ORIGIN}/${TARGET_BRANCH}
+          
+      - name: Do the build
+        run: |
+          echo This is where you run the build
+        
+      - name: Push changes to default target branch
+        run: |
+          set -ex
+          TARGET_BRANCH=$( gh repo view --json defaultBranchRef --jq .defaultBranchRef.name )
+          git push ${ORIGIN} ${{github.ref_name}}:${TARGET_BRANCH}
+          
