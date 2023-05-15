@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BeSammen</string>
+    <string name="password" />
+    <string name="email" />
+    <string name="login" />
+    <string name="Oprettelse" />
 </resources>
