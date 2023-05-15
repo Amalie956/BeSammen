@@ -1,4 +1,4 @@
-package com.example.besammen.Database;
+package com.example.besammen.database;
 
 import androidx.appcompat.app.AppCompatActivity;
 

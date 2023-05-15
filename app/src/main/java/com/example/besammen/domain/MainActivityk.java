@@ -1,4 +1,4 @@
-package com.example.besammen.Domain;
+package com.example.besammen.domain;
 
 import androidx.appcompat.app.AppCompatActivity;
 

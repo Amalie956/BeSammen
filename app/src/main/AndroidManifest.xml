@@ -19,13 +19,13 @@
             android:name=".UserLogin"
             android:exported="false" />
         <activity
-            android:name=".Domain.MainActivityk"
+            android:name=".domain.MainActivityk"
             android:exported="false" />
         <activity
-            android:name=".Database.Firebase"
+            android:name=".database.Firebase"
             android:exported="false" />
         <activity
-            android:name=".UI.MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

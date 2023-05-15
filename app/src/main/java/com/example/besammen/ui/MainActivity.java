@@ -1,4 +1,4 @@
-package com.example.besammen.UI;
+package com.example.besammen.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import com.example.besammen.R;
 import com.example.besammen.UserLogin;
-import com.example.besammen.UserRegistration;
 
 public class MainActivity extends AppCompatActivity {
 
