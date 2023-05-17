@@ -29,7 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:background="@drawable/edit_input"
             android:hint="@string/create_email" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,7 +44,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:background="@drawable/edit_input"
             android:hint="@string/create_password" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,7 +80,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:background="@drawable/edit_input"
             android:hint="@string/choose_username" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,7 +92,6 @@
             android:id="@+id/age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_input"
             android:layout_margin="6dp"
             android:inputType="none"
             android:hint="@string/age" />
@@ -110,7 +106,6 @@
             android:id="@+id/gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_input"
             android:layout_margin="6dp"
             android:inputType="none"
             android:hint="@string/gender" />
@@ -127,7 +122,6 @@
             android:id="@+id/diagnosis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_input"
             android:layout_margin="6dp"
             android:inputType="none"
             android:hint="@string/diagnosis" />
@@ -139,7 +133,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:background="@drawable/reg_bottom"
         android:layout_margin="10dp"
         android:text="@string/createAnAccount" />
 

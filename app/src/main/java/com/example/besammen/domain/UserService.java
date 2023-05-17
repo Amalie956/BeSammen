@@ -38,7 +38,9 @@ public class UserService {
                         }
                     }
                 });
+    }
 
+    public void createUserMethod(String email, String password) {
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
