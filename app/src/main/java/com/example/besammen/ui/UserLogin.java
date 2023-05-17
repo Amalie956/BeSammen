@@ -45,7 +45,7 @@ public class UserLogin extends AppCompatActivity {
                 boolean x = userLoginValidator.loginValidator(email, password);
 
                 if (x == true) {
-                    userLoginService.signIn(email, password);
+                    userLoginService.loginMethod(email, password);
                 }
             }
         });

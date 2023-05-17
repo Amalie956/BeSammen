@@ -28,7 +28,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:background="@drawable/edit_input"
             android:hint="@string/login_email" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,7 +42,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:background="@drawable/edit_input"
             android:hint="@string/login_password" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,7 +50,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
-        android:background="@drawable/reg_bottom"
         android:backgroundTint="@color/green_200"
         android:text="@string/login_button"
         android:textColor="@color/black" />
@@ -72,7 +69,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
-        android:background="@drawable/reg_bottom"
         android:backgroundTint="@color/green_200"
         android:text="@string/create_user"
         android:textColor="@color/black" />

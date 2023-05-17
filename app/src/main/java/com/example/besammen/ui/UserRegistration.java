@@ -85,10 +85,10 @@ public class UserRegistration extends AppCompatActivity {
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
 
-                boolean x = userLoginValidator.UserValidator(email, password);
+                boolean x = userLoginValidator.createUserValidator(email, password);
 
                 if (x == true) {
-                    userLoginService.signIn(email, password);
+                    userLoginService.createUserMethod(email, password);
                 }
             }
         });
