@@ -2,56 +2,88 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="te"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green_600"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="40dp"
-    tools:context=".UserLogin">
+    tools:context=".ui.UserLogin">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_margin="15dp"
-        android:text="@string/login" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="259dp"
+        android:layout_height="145dp"
+        app:srcCompat="@drawable/besammen" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
-            android:hint="email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/edit_input"
+            android:hint="@string/login_email" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
-            android:hint="password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/edit_input"
+            android:hint="@string/login_password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_login"
-        android:text="Log på"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/reg_bottom"
+        android:backgroundTint="@color/green_200"
+        android:text="@string/login_button"
+        android:textColor="@color/black" />
 
     <TextView
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:id="@+id/registerNow"
-        android:text="Opretbruger"
+        android:id="@+id/forgot_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/create_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/reg_bottom"
+        android:backgroundTint="@color/green_200"
+        android:text="@string/create_user"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/beSammenText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/besammen_text"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
 </LinearLayout>

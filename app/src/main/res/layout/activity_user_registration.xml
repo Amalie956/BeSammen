@@ -7,51 +7,149 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="40dp"
-    tools:context=".UserRegistration">
+    tools:context=".ui.UserRegistration">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:gravity="center"
-        android:layout_margin="15dp"
-        android:text="@string/Oprettelse" />
+        android:text="@string/description_group" />
 
     <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
-            android:hint="email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/edit_input"
+            android:hint="@string/create_email" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
-            android:hint="password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/edit_input"
+            android:hint="@string/create_password" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/green_200"
+            android:trackTint="@color/green_200"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/switch2"
+            android:layout_alignBaseline="@id/switch2"
+            android:text="@string/switch_nn" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/edit_input"
+            android:hint="@string/choose_username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_input"
+            android:layout_margin="6dp"
+            android:inputType="none"
+            android:hint="@string/age" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_input"
+            android:layout_margin="6dp"
+            android:inputType="none"
+            android:hint="@string/gender" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/diagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_input"
+            android:layout_margin="6dp"
+            android:inputType="none"
+            android:hint="@string/diagnosis" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/btn_register"
-        android:text="Log på"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/reg_bottom"
+        android:layout_margin="10dp"
+        android:text="@string/createAnAccount" />
 
     <TextView
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
         android:id="@+id/loginNow"
-        android:text="Tilbage til login"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/back_to_login"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
 </LinearLayout>
