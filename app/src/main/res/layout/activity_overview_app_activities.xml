@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:text="Privatchat"
             android:textAlignment="center"
+            android:textColor="#0C4819"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -116,6 +117,7 @@
             android:layout_height="wrap_content"
             android:text="Begivenheder"
             android:textAlignment="center"
+            android:textColor="#0C4819"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -143,6 +145,7 @@
             android:layout_height="wrap_content"
             android:text="Venner"
             android:textAlignment="center"
+            android:textColor="#0C4819"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -170,6 +173,7 @@
             android:layout_height="wrap_content"
             android:text="Viden"
             android:textAlignment="center"
+            android:textColor="#0C4819"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -196,6 +200,7 @@
             android:layout_height="wrap_content"
             android:text="Spørg"
             android:textAlignment="center"
+            android:textColor="#0C4819"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -225,6 +230,7 @@
             android:layout_height="wrap_content"
             android:text="Indstillinger"
             android:textAlignment="center"
+            android:textColor="#0C4819"
             android:textSize="16sp" />
     </LinearLayout>
 
