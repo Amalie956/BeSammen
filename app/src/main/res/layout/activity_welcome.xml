@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="124dp"
         android:layout_height="41dp"
-        android:text="Welcome "
+        android:text="Welcome X"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
