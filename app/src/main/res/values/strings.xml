@@ -1,7 +1,35 @@
 <resources>
+    <!--Navnet på app'en-->
     <string name="app_name">BeSammen</string>
-    <string name="password" />
-    <string name="email" />
-    <string name="login" />
-    <string name="Oprettelse" />
+
+    <!--Forside-->
+    <string name="login_email">Email</string>
+    <string name="login_password">Kodeord</string>
+    <string name="login_button">Log ind</string>
+    <string name="forgot_password">Har du glemt din adganskode?</string>
+    <string name="createAnAccount">Opret bruger</string>
+    <string name="besammen_text">BeSammen</string>
+
+    <!--Opret bruger forside-->
+    <string name="description_group">Fortæl os om dig selv! Vi vil gerne tildele dig den bedst mulige BeSammen-gruppe</string>
+    <string name="create_email">Email</string>
+    <string name="create_password">Kodeord</string>
+    <string name="switch_nn">Vil du gerne være anonym?</string>
+    <string name="choose_username">Vælg dit brugernavn</string>
+    <string name="age">Alder</string>
+    <string name="gender">Køn</string>
+    <string name="diagnosis">Diagnose</string>
+    <string name="create_user">Opret bruger</string>
+    <string name="back_to_login">Tilbage til login</string>
+
+
+
+
+
+
+
+
+
+
+
 </resources>
