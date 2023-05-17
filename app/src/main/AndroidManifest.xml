@@ -13,9 +13,6 @@
         android:theme="@style/Theme.BeSammen"
         tools:targetApi="31">
         <activity
-            android:name=".WelcomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".UserRegistration"
             android:exported="false" />
         <activity
