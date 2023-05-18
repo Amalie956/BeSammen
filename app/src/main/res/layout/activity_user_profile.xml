@@ -85,8 +85,8 @@
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="294dp"
-        android:layout_height="99dp"
+        android:layout_width="306dp"
+        android:layout_height="96dp"
         android:lineSpacingExtra="@dimen/cardview_default_elevation"
         android:text="@string/jeg_er_en"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
