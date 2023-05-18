@@ -4,4 +4,13 @@
     <string name="email" />
     <string name="login" />
     <string name="Oprettelse" />
+    <string name="sammen">Sammen</string>
+    <string name="be">Be</string>
+    <string name="skriv_til_mig">Skriv til mig, og vi kan mødes til en kop kaffe!</string>
+    <string name="jeg_er_en">Jeg er en ung kvinde, som for nyligt er blevet diagnosticeret med ADHD. Når det er sagt, så er det vigtigt for mig, at min diagnose ikke definerer, hvem jeg er.</string>
+    <string name="hun_hende">hun/hende</string>
+    <string name="om_mig">Om mig:</string>
+    <string name="anna_username">Anna_username</string>
+    <string name="anna_21">Anna 21</string>
+    <string name="profil">Profil</string>
 </resources>
