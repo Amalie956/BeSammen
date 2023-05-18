@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 
 import com.example.besammen.ui.UserLogin;
 import com.example.besammen.ui.UserRegistration;
+import com.example.besammen.ui.WelcomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -29,7 +30,7 @@ public class UserService {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(context, UserRegistration.class);
+                            Intent intent = new Intent(context, WelcomeActivity.class);
                             context.startActivity(intent);
                             // Finish the current activity if needed
                             // ((Activity) context).finish();
@@ -47,7 +48,7 @@ public class UserService {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(context, "Register Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(context, UserLogin.class);
+                            Intent intent = new Intent(context, WelcomeActivity.class);
                             context.startActivity(intent);
                             // Finish the current activity if needed
                             // ((Activity) context).finish();
