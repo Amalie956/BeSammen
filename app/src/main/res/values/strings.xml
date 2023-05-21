@@ -4,4 +4,14 @@
     <string name="email" />
     <string name="login" />
     <string name="Oprettelse" />
+    <string name="be">Be</string>
+    <string name="sammen">Sammen</string>
+    <string name="indstillinger">Indstillinger</string>
+    <string name="profil_indstillinger">Profil indstillinger</string>
+    <string name="v_lg_sprog">Vælg sprog</string>
+    <string name="sprog">Sprog</string>
+    <string name="generelt">Generelt</string>
+    <string name="log_ud">Log ud</string>
+    <string name="tema">Tema</string>
+    <string name="darkmode">Darkmode</string>
 </resources>
