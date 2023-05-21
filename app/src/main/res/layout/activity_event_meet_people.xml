@@ -14,7 +14,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007"
         app:srcCompat="@drawable/meet_people"
-        tools:layout_editor_absoluteX="-66dp" />
+        tools:layout_editor_absoluteX="-66dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/participate_button"
@@ -34,15 +35,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lær hinanden at kende"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="413dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="410dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="329dp"
         android:layout_height="62dp"
         android:text="Til dette event kan I mødes og snakke sammen"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="461dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="461dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
