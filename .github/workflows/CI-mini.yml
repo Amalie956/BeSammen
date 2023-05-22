@@ -5,20 +5,19 @@ on:
     branches-ignore:
       - main
       - master
-      
+
 env:
-  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   ORIGIN: origin
-  
 
 permissions:
   contents: write
 
 jobs:
-  ci: 
+  ci:
     runs-on: ubuntu-latest
     steps:
-    
+
       - name: Checkout code
         uses: actions/checkout@v3
         with:
@@ -34,24 +33,22 @@ jobs:
       - name: Rebased against default target branch
         run: |
           set -ex
-          TARGET_BRANCH=$( gh repo view --json defaultBranchRef --jq .defaultBranchRef.name )
+          TARGET_BRANCH=$(gh repo view --json defaultBranchRef --jq .defaultBranchRef.name)
           git rebase ${ORIGIN}/${TARGET_BRANCH}
-          
+
       - name: Do the build
         run: |
           set -ex
-              chmod +x gradlew
-              
+          chmod +x gradlew
+
       - name: Delete branch after build
         if: github.ref_type == 'branch' && github.event_name == 'push'
         run: |
           set -ex
-          git push -- delete origin ${{ github.ref }}
-
+          git push --delete origin ${{ github.ref }}
 
       - name: Push changes to default target branch
         run: |
-         set -ex
-          TARGET_BRANCH=$( gh repo view --json defaultBranchRef --jq .defaultBranchRef.name )
-          git push ${ORIGIN} ${{github.ref_name}}:${TARGET_BRANCH}
-          
+          set -ex
+          TARGET_BRANCH=$(gh repo view --json defaultBranchRef --jq .defaultBranchRef.name)
+          git push ${ORIGIN} ${{ github.ref_name }}:${TARGET_BRANCH}
