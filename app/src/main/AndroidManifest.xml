@@ -14,24 +14,25 @@
         android:theme="@style/Theme.BeSammen"
         tools:targetApi="31">
         <activity
+            android:name=".ui.UserSettings"
+            android:exported="false" />
 
-            android:name=".UserSettings"
+        <activity
+            android:name=".ui.UserProfile"
+            android:exported="false" />
 
-
-            android:name=".UserProfile"
-
+        <activity
+            android:name=".ui.GroupChatOverview"
             android:exported="false" />
         <activity
-            android:name=".UserRegistration"
+            android:name=".ui.Event_meet_people"
+            android:exported="false" />
 
-
-            android:name=".GroupChatOverview"
-
-            android:name=".Event_mindfulness"
+        <activity
+            android:name=".ui.UserEvents"
             android:exported="false" />
         <activity
-            android:name=".UserEvents"
-
+            android:name=".ui.Message"
             android:exported="false" />
         <activity
             android:name=".ui.OverviewActivity"
