@@ -21,6 +21,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -43,22 +44,22 @@ public class Message extends AppCompatActivity {
         lv=findViewById(R.id.lv);
         ed=findViewById(R.id.edmsg);
         db.getReference("Messages").addChildEventListener(new ChildEventListener() {
-           /* @Override
+            /* @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                Toast.makeText(Message.this, "Message added"+snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
-                al.add(snapshot.getValue().toString());
-                ArrayAdapter adapter = new ArrayAdapter(Message.this, android.R.layout.simple_list_item_1,al);
-                lv.setAdapter(adapter);
+            Toast.makeText(Message.this, "Message added"+snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
+            al.add(snapshot.getValue().toString());
+            ArrayAdapter adapter = new ArrayAdapter(Message.this, android.R.layout.simple_list_item_1,al);
+            lv.setAdapter(adapter);
             }
             */
-           @Override
-           public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-               Log.d("Message", "Child added: " + snapshot.getValue().toString());
-               Toast.makeText(Message.this, "Message added: " + snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
-               al.add(snapshot.getValue().toString());
-               ArrayAdapter adapter = new ArrayAdapter(Message.this, android.R.layout.simple_list_item_1, al);
-               lv.setAdapter(adapter);
-           }
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                Log.d("Message", "Child added: " + snapshot.getValue().toString());
+                Toast.makeText(Message.this, "Message added: " + snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
+                al.add(snapshot.getValue().toString());
+                ArrayAdapter adapter = new ArrayAdapter(Message.this, android.R.layout.simple_list_item_1, al);
+                lv.setAdapter(adapter);
+            }
 
 
             @Override

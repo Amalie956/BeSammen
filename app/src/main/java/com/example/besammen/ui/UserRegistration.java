@@ -24,6 +24,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -37,9 +38,9 @@ public class UserRegistration extends AppCompatActivity {
     String uid = user.getUid();
 
 
-    String[] items ={"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
-    String[] gender ={"Kvinde", "Mand", "Andet"};
-    String[] diagnosis ={"ADHD"};
+    String[] items = {"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
+    String[] gender = {"Kvinde", "Mand", "Andet"};
+    String[] diagnosis = {"ADHD"};
     AutoCompleteTextView autoCompleteTextView;
     ArrayAdapter<String> adapterItem;
 
@@ -115,7 +116,7 @@ public class UserRegistration extends AppCompatActivity {
     }
 
 
-    public void setUserData (View view) {
+    public void setUserData(View view) {
         AutoCompleteTextView userNameView = findViewById(R.id.userName);
         String userName = userNameView.getText().toString();
         AutoCompleteTextView ageView = findViewById(R.id.age);
@@ -148,11 +149,10 @@ public class UserRegistration extends AppCompatActivity {
                         System.out.println("error");
                     }
                 });
-            }
+    }
 
-    public void getUserData (View view) {
-        db.collection("Users")
-                .document(uid)
+    public void getUserData(View view) {
+        db.collection("users")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -168,6 +168,6 @@ public class UserRegistration extends AppCompatActivity {
                 });
     }
 
-
-
 }
+
+
