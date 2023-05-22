@@ -12,6 +12,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.besammen.R;
 import com.example.besammen.domain.UserService;
@@ -24,6 +25,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -85,9 +87,11 @@ public class UserRegistration extends AppCompatActivity {
             }
         });
 
+
         TextInputEditText editTextEmail = findViewById(R.id.email);
         TextInputEditText editTextPassword = findViewById(R.id.password);
         Button buttonReg = findViewById(R.id.btn_register);
+
         TextView textView = findViewById(R.id.loginNow);
 
         textView.setOnClickListener(new View.OnClickListener() {
@@ -113,9 +117,58 @@ public class UserRegistration extends AppCompatActivity {
                 }
             }
         });
+
+        setUserData();
     }
 
 
+    public void setUserData() {
+
+        Button button = findViewById(R.id.btn_register);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TextInputEditText email = findViewById(R.id.email);
+                TextInputEditText userName = findViewById(R.id.userName);
+                AutoCompleteTextView age = findViewById(R.id.age);
+                AutoCompleteTextView gender = findViewById(R.id.gender);
+                AutoCompleteTextView diagnosis = findViewById(R.id.diagnosis);
+
+                //String getEmail = email.getText().toString();
+                String getUsername = userName.getText().toString();
+                String getAge = age.getText().toString();
+                String getGender = gender.getText().toString();
+                String getDiagnosis = diagnosis.getText().toString();
+
+                Map<String, Object> hashMap = new HashMap<>();
+                //hashMap.put("email", getEmail);
+                hashMap.put("userName", getUsername);
+                hashMap.put("age", getAge);
+                hashMap.put("gender", getGender);
+                hashMap.put("userDiagnosis", getDiagnosis);
+
+                db.collection("Users")
+                        .add(hashMap)
+                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                            @Override
+                            public void onSuccess(DocumentReference documentReference) {
+                                System.out.println("added");
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                System.out.println("error");
+                                System.out.println(e);
+                            }
+                        });
+            }
+        });
+    }
+
+
+
+/*
     public void setUserData(View view) {
         AutoCompleteTextView userNameView = findViewById(R.id.userName);
         String userName = userNameView.getText().toString();
@@ -126,47 +179,41 @@ public class UserRegistration extends AppCompatActivity {
         AutoCompleteTextView diagnosisView = findViewById(R.id.diagnosis);
         String diagnosis = diagnosisView.getText().toString();
 
-        //Insert data
+        // Create a Map object with user data
         Map<String, Object> user = new HashMap<>();
         user.put("userName", userName);
         user.put("age", age);
         user.put("gender", gender);
         user.put("diagnosis", diagnosis);
 
-        //add a new document
+        // Save the data to the database
         db.collection("Users")
                 .document(uid)
                 .set(user)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        System.out.println("added");
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        System.out.println("error");
-                    }
+                .addOnSuccessListener(aVoid -> System.out.println("Data added"))
+                .addOnFailureListener(e -> {
+                    System.out.println("Error adding data: " + e);
+                    e.printStackTrace();
                 });
     }
 
     public void getUserData(View view) {
-        db.collection("users")
+        db.collection("Users")
+                .document(uid)
                 .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                System.out.println(document.getData());
-                            }
-                        } else {
-                            System.out.println(task.getException());
-                        }
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        System.out.println(documentSnapshot.getData());
+                    } else {
+                        System.out.println("Document does not exist");
                     }
+                })
+                .addOnFailureListener(e -> {
+                    System.out.println("Error getting document: " + e);
+                    e.printStackTrace();
                 });
     }
+ */
 
 }
 
