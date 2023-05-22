@@ -21,15 +21,10 @@
     <string name="diagnosis">Diagnose</string>
     <string name="create_user">Opret bruger</string>
     <string name="back_to_login">Tilbage til login</string>
-
-
-
-
-
-
-
-
-
+    <string name="admin">Admin</string>
+    <string name="moderator">Moderator</string>
+    <string name="gruppe_chat">Gruppe chat</string>
+    <string name="adhd">ADHD</string>
 
 
 </resources>
