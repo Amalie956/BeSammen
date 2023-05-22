@@ -14,10 +14,14 @@
         android:theme="@style/Theme.BeSammen"
         tools:targetApi="31">
         <activity
+
+            android:name=".GroupChatOverview"
+
             android:name=".Event_mindfulness"
             android:exported="false" />
         <activity
             android:name=".UserEvents"
+
             android:exported="false" />
         <activity
             android:name=".ui.OverviewActivity"
