@@ -9,6 +9,7 @@ on:
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   ORIGIN: origin
+  
 
 permissions:
   contents: write
