@@ -15,7 +15,6 @@ import com.example.besammen.R;
 public class UserEvents extends AppCompatActivity {
     ImageButton imageButton;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,4 +29,7 @@ public class UserEvents extends AppCompatActivity {
             }
         });
     }
+
+
+
 }
