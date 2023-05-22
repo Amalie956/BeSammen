@@ -6,6 +6,21 @@
     <string name="email" />
     <string name="login" />
     <string name="Oprettelse" />
+
+    <!--Indstillinger-->
+    <string name="be">Be</string>
+    <string name="sammen">Sammen</string>
+    <string name="indstillinger">Indstillinger</string>
+    <string name="profil_indstillinger.">Profil indstillinger</string>
+    <string name="v_lg_sprog">Vælg sprog</string>
+    <string name="sprog">Sprog</string>
+    <string name="generelt">Generelt</string>
+    <string name="log_ud">Log ud</string>
+    <string name="tema">Tema</string>
+    <string name="darkmode">Darkmode</string>
+
+  
+    <!--Profil-->
     <string name="sammen">Sammen</string>
     <string name="be">Be</string>
     <string name="skriv_til_mig">Skriv til mig, og vi kan mødes til en kop kaffe!</string>
