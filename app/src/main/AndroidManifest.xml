@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,19 +14,46 @@
         android:theme="@style/Theme.BeSammen"
         tools:targetApi="31">
         <activity
+
             android:name=".UserSettings"
+
+
+            android:name=".UserProfile"
+
             android:exported="false" />
         <activity
             android:name=".UserRegistration"
+
+
+            android:name=".GroupChatOverview"
+
+            android:name=".Event_mindfulness"
             android:exported="false" />
         <activity
-            android:name=".UserLogin"
+            android:name=".UserEvents"
+
             android:exported="false" />
         <activity
-            android:name=".domain.MainActivityk"
+            android:name=".ui.OverviewActivity"
             android:exported="false" />
         <activity
-            android:name=".database.Firebase"
+            android:name=".ui.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".domain.User"
+            android:exported="false" />
+        <activity
+            android:name=".domain.UserValidator"
+
+            android:exported="false" />
+        <activity
+            android:name=".domain.UserService"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserLogin"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"

@@ -41,16 +41,16 @@ jobs:
           set -ex
               chmod +x gradlew
               
-      - name: Delete branch after build
-        if: github.ref_type == 'branch' && github.event_name == 'push'
-        run: |
-          set -ex
-          git push --delete origin ${{ github.ref }}
+      #- name: Delete branch after build
+      #  if: github.ref_type == 'branch' && github.event_name == 'push'
+      #  run: |
+      #    set -ex
+      #    git push --delete origin ${{ github.ref }}
 
 
-      - name: Push changes to default target branch
-        run: |
-          set -ex
-          TARGET_BRANCH=$( gh repo view --json defaultBranchRef --jq .defaultBranchRef.name )
-          git push ${ORIGIN} ${{github.ref_name}}:${TARGET_BRANCH}
+      #- name: Push changes to default target branch
+      #  run: |
+      #    set -ex
+      #    TARGET_BRANCH=$( gh repo view --json defaultBranchRef --jq .defaultBranchRef.name )
+      #    git push ${ORIGIN} ${{github.ref_name}}:${TARGET_BRANCH}
           
