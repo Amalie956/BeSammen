@@ -31,9 +31,7 @@
         <activity
             android:name=".ui.UserEvents"
             android:exported="false" />
-        <activity
-            android:name=".ui.Message"
-            android:exported="false" />
+
         <activity
             android:name=".ui.OverviewActivity"
             android:exported="false" />
