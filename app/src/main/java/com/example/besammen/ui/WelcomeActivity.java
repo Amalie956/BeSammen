@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import com.example.besammen.R;
 
 public class WelcomeActivity extends AppCompatActivity {
-    //ImageView imageView;
 
     Button button;
+    ImageView imageView;
 
 
     @Override
@@ -22,12 +22,23 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        //imageView = findViewById(R.id.imageView);
+
+        imageView = findViewById(R.id.imageViewButton);
+
 
         button = findViewById(R.id.continuebtn);
 
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(WelcomeActivity.this, OverviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         button.setOnClickListener(new View.OnClickListener() {
+
         //imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { //Når man trykker på billedet, kommer man hen til Overview siden
