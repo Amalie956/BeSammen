@@ -24,7 +24,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
         //imageView = findViewById(R.id.imageView);
 
-        //button = findViewById(R.id.continuebtn);
+        button = findViewById(R.id.continuebtn);
 
 
         button.setOnClickListener(new View.OnClickListener() {
