@@ -1,6 +1,33 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!--Navnet på app'en-->
     <string name="app_name">BeSammen</string>
+
+    <string name="password" />
+    <string name="email" />
+    <string name="login" />
+    <string name="Oprettelse" />
+
+    <!--Indstillinger-->
+    <string name="be" tools:ignore="DuplicateDefinition">Be</string>
+    <string name="sammen" tools:ignore="DuplicateDefinition">Sammen</string>
+    <string name="indstillinger">Indstillinger</string>
+    <string name="profil_indstillinger.">Profil indstillinger</string>
+    <string name="v_lg_sprog">Vælg sprog</string>
+    <string name="sprog">Sprog</string>
+    <string name="generelt">Generelt</string>
+    <string name="log_ud">Log ud</string>
+    <string name="tema">Tema</string>
+    <string name="darkmode">Darkmode</string>
+
+
+    <!--Profil-->
+    <string name="skriv_til_mig">Skriv til mig, og vi kan mødes til en kop kaffe!</string>
+    <string name="jeg_er_en">Jeg er en ung kvinde, som for nyligt er blevet diagnosticeret med ADHD. Når det er sagt, så er det vigtigt for mig, at min diagnose ikke definerer, hvem jeg er.</string>
+    <string name="hun_hende">hun/hende</string>
+    <string name="om_mig">Om mig:</string>
+    <string name="anna_username">Anna_username</string>
+    <string name="anna_21">Anna 21</string>
+    <string name="profil">Profil</string>
 
     <!--Forside-->
     <string name="login_email">Email</string>
@@ -22,14 +49,12 @@
     <string name="create_user">Opret bruger</string>
     <string name="back_to_login">Tilbage til login</string>
 
-
-
-
-
-
-
-
-
-
+    <!--Gruppe chat overview-->
+    <string name="admin">Admin</string>
+    <string name="moderator">Moderator</string>
+    <string name="gruppe_chat">Gruppe chat</string>
+    <string name="adhd">ADHD</string>
+    <string name="profil_indstillinger">Indstillinger</string>
+    <string name="fors_t">forsæt</string>
 
 </resources>

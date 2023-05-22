@@ -7,31 +7,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.besammen.R;
 
-public class WelcomeActivity extends AppCompatActivity {
-    //ImageView imageView;
+public class UserEvents extends AppCompatActivity {
+    ImageButton imageButton;
 
-    Button button;
-
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.activity_user_events);
 
-        //imageView = findViewById(R.id.imageView);
-
-        button = findViewById(R.id.continuebtn);
-
-
-        button.setOnClickListener(new View.OnClickListener() {
-        //imageView.setOnClickListener(new View.OnClickListener() {
+        imageButton = findViewById(R.id.meet_people);
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { //Når man trykker på billedet, kommer man hen til Overview siden
-                Intent intent = new Intent(WelcomeActivity.this, Message.class);
+                Intent intent = new Intent(UserEvents.this, Event_meet_people.class);
                 startActivity(intent);
             }
         });

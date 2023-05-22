@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2FFDD"
+    tools:context=".ui.UserSettings">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="790dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Generelt"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="@string/generelt"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="93dp"
+                    android:layout_height="56dp"
+                    app:srcCompat="@drawable/profil_indstillinger" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profil_indstillinger2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="@string/profil_indstillinger."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintVertical_bias="0.149" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="189dp"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="34dp"
+                        android:layout_height="27dp"
+                        app:srcCompat="@drawable/pil" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sprog1"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="@string/sprog"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="129dp">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="83dp"
+                    android:layout_height="45dp"
+                    app:srcCompat="@drawable/globe" />
+
+                <TextView
+                    android:id="@+id/sprog"
+                    android:layout_width="186dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/corners"
+                    android:text="@string/v_lg_sprog"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteY="355dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sprog2"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="@string/tema"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="314dp">
+
+                <LinearLayout
+                    android:layout_width="87dp"
+                    android:layout_height="52dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/moon" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="158dp"
+                    android:layout_height="51dp"
+                    android:layout_marginEnd="136dp"
+                    android:text="@string/darkmode"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95sp"
+                    android:backgroundTint="#0C4819"
+                    android:text="@string/log_ud" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="176dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="@string/be"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="136dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="@string/sammen" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="411dp"
+        android:layout_height="99dp"
+        android:background="@drawable/header"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profil_indstillinger"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
