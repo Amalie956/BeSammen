@@ -19,7 +19,7 @@
     <string name="tema">Tema</string>
     <string name="darkmode">Darkmode</string>
 
-  
+
     <!--Profil-->
     <string name="skriv_til_mig">Skriv til mig, og vi kan mødes til en kop kaffe!</string>
     <string name="jeg_er_en">Jeg er en ung kvinde, som for nyligt er blevet diagnosticeret med ADHD. Når det er sagt, så er det vigtigt for mig, at min diagnose ikke definerer, hvem jeg er.</string>
@@ -48,8 +48,8 @@
     <string name="diagnosis">Diagnose</string>
     <string name="create_user">Opret bruger</string>
     <string name="back_to_login">Tilbage til login</string>
-  
-   <!--Gruppe chat overview-->
+
+    <!--Gruppe chat overview-->
     <string name="admin">Admin</string>
     <string name="moderator">Moderator</string>
     <string name="gruppe_chat">Gruppe chat</string>
