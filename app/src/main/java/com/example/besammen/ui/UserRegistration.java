@@ -37,8 +37,6 @@ import java.util.Map;
 public class UserRegistration extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-    String uid = user.getUid();
-
 
     String[] items = {"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
     String[] gender = {"Kvinde", "Mand", "Andet"};
@@ -119,25 +117,21 @@ public class UserRegistration extends AppCompatActivity {
             }
         });
 
-
     }
 
 
     public void setUserData() {
-        //TextInputEditText email = findViewById(R.id.email);
         TextInputEditText userName = findViewById(R.id.userName);
         AutoCompleteTextView age = findViewById(R.id.age);
         AutoCompleteTextView gender = findViewById(R.id.gender);
         AutoCompleteTextView diagnosis = findViewById(R.id.diagnosis);
 
-        //String getEmail = email.getText().toString();
         String getUsername = userName.getText().toString();
         String getAge = age.getText().toString();
         String getGender = gender.getText().toString();
         String getDiagnosis = diagnosis.getText().toString();
 
         Map<String, Object> hashMap = new HashMap<>();
-        //hashMap.put("email", getEmail);
         hashMap.put("userName", getUsername);
         hashMap.put("age", getAge);
         hashMap.put("gender", getGender);
@@ -158,16 +152,15 @@ public class UserRegistration extends AppCompatActivity {
                         System.out.println(e);
                     }
                 });
-                getUsername(getUsername);
+        getUsername(getUsername, getAge);
     }
 
-    public void getUsername(String username) {
+    public void getUsername(String username, String age) {
         Intent intent = new Intent(UserRegistration.this, WelcomeActivity.class);
         intent.putExtra("userName", username);
+        intent.putExtra("age", age);
         startActivity(intent);
     }
-
-
 
 
 }
