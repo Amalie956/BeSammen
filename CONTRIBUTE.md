@@ -11,13 +11,13 @@ Vores [*project*](https://github.com/users/Amalie956/projects/5/views/1) ser så
 
 ![billede](https://github.com/Amalie956/BeSammen/assets/112120321/be6610a2-ee16-4bfe-a67e-45b36a689ea5)
 
-##### Issue
+#### Issue
 Nævne hvordan man lavet et issue?
 
 #### Android Studio
 Vi udvikler vores app i Android Studio. Du skal derfor [downloade](https://developer.android.com/studio) det. [Her](https://developer.android.com/studio/install) er der en guide til hvordan du installere det
 
-##### Branch
+#### Branch
 Forklar hvordan man laver en branch for at udvikle i Android Studio?
 
 #### Kontakt gruppemedlemmerne 
