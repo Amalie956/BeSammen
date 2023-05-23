@@ -6,15 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".ui.Event_meet_people">
 
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="402dp"
+        android:layout_height="67dp"
+        android:background="@drawable/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="586dp"
-        android:layout_height="382dp"
+        android:layout_width="565dp"
+        android:layout_height="512dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
+        app:layout_constraintVertical_bias="0.131"
         app:srcCompat="@drawable/meet_people"
-        tools:layout_editor_absoluteX="-66dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -37,10 +48,10 @@
         android:layout_height="wrap_content"
         android:text="Lær hinanden at kende"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="410dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="483dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -48,8 +59,9 @@
         android:layout_height="62dp"
         android:text="Til dette event kan I mødes og snakke sammen"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="461dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="544dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

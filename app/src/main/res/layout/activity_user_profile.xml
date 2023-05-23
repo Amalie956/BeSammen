@@ -8,39 +8,35 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="420dp"
-        android:layout_height="418dp"
-        android:layout_marginTop="108dp"
+        android:layout_width="393dp"
+        android:layout_height="326dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile_picture"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:srcCompat="@drawable/profile_picture" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="354dp"
         android:layout_height="222dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/about_me"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="410dp"
-        android:layout_height="52dp"
+        android:layout_width="395dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="312dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.587">
+        app:layout_constraintTop_toTopOf="@+id/imageView2">
 
         <TextView
             android:id="@+id/anna_21"
@@ -48,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/anna_21"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
@@ -55,7 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/anna_username" />
+            android:text="@string/anna_username"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <TextView
@@ -63,6 +61,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/om_mig"
+        android:textSize="14sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="0.083"
@@ -75,6 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hun_hende"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="0.089"
@@ -88,6 +89,7 @@
         android:layout_height="96dp"
         android:lineSpacingExtra="@dimen/cardview_default_elevation"
         android:text="@string/jeg_er_en"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
         app:layout_constraintStart_toStartOf="@+id/textView14"
@@ -99,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/skriv_til_mig"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="0.0"
@@ -114,6 +117,7 @@
         android:layout_marginBottom="28dp"
         android:text="@string/be"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -124,6 +128,7 @@
         android:layout_marginEnd="136dp"
         android:layout_marginBottom="28dp"
         android:text="@string/sammen"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -131,8 +136,8 @@
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="403dp"
-        android:layout_height="99dp"
+        android:layout_width="402dp"
+        android:layout_height="67dp"
         android:background="@drawable/header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -143,8 +148,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/profil"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/textView25"
         app:layout_constraintTop_toTopOf="@+id/textView25" />
 
