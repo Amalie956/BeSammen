@@ -22,7 +22,7 @@ Vi udvikler vores app i Android Studio. Du skal derfor [downloade](https://devel
 #### Branch
 Forklar hvordan man laver en branch for at udvikle i Android Studio?
 
-#### Kontakt gruppemedlemmerne
+#### Contributors
 - [Abdul, IT-Arkitektur studerende](https://github.com/Abdu1RH)
 - [Amalie, IT-Arkitektur studerende](https://github.com/Amalie956)
 - [Klara, IT-Arkitektur studerende](https://github.com/Catlover2200)
