@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.example.besammen.ui.OverviewActivity;
 import com.example.besammen.ui.UserLogin;
 import com.example.besammen.ui.UserRegistration;
 import com.example.besammen.ui.WelcomeActivity;
@@ -30,7 +31,7 @@ public class UserService {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(context, WelcomeActivity.class);
+                            Intent intent = new Intent(context, OverviewActivity.class);
                             context.startActivity(intent);
                             // Finish the current activity if needed
                             // ((Activity) context).finish();
