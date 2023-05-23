@@ -115,55 +115,52 @@ public class UserRegistration extends AppCompatActivity {
                 if (x == true) {
                     userLoginService.createUserMethod(email, password);
                 }
+                setUserData();
             }
         });
 
-        setUserData();
+
     }
 
 
     public void setUserData() {
 
-        Button button = findViewById(R.id.btn_register);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //TextInputEditText email = findViewById(R.id.email);
-                TextInputEditText userName = findViewById(R.id.userName);
-                AutoCompleteTextView age = findViewById(R.id.age);
-                AutoCompleteTextView gender = findViewById(R.id.gender);
-                AutoCompleteTextView diagnosis = findViewById(R.id.diagnosis);
 
-                //String getEmail = email.getText().toString();
-                String getUsername = userName.getText().toString();
-                String getAge = age.getText().toString();
-                String getGender = gender.getText().toString();
-                String getDiagnosis = diagnosis.getText().toString();
+        //TextInputEditText email = findViewById(R.id.email);
+        TextInputEditText userName = findViewById(R.id.userName);
+        AutoCompleteTextView age = findViewById(R.id.age);
+        AutoCompleteTextView gender = findViewById(R.id.gender);
+        AutoCompleteTextView diagnosis = findViewById(R.id.diagnosis);
 
-                Map<String, Object> hashMap = new HashMap<>();
-                //hashMap.put("email", getEmail);
-                hashMap.put("userName", getUsername);
-                hashMap.put("age", getAge);
-                hashMap.put("gender", getGender);
-                hashMap.put("userDiagnosis", getDiagnosis);
+        //String getEmail = email.getText().toString();
+        String getUsername = userName.getText().toString();
+        String getAge = age.getText().toString();
+        String getGender = gender.getText().toString();
+        String getDiagnosis = diagnosis.getText().toString();
 
-                db.collection("Users")
-                        .add(hashMap)
-                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                            @Override
-                            public void onSuccess(DocumentReference documentReference) {
-                                System.out.println("added");
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                System.out.println("error");
-                                System.out.println(e);
-                            }
-                        });
-            }
-        });
+        Map<String, Object> hashMap = new HashMap<>();
+        //hashMap.put("email", getEmail);
+        hashMap.put("userName", getUsername);
+        hashMap.put("age", getAge);
+        hashMap.put("gender", getGender);
+        hashMap.put("userDiagnosis", getDiagnosis);
+
+        db.collection("Users")
+                .add(hashMap)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        System.out.println("added");
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        System.out.println("error");
+                        System.out.println(e);
+                    }
+                });
+
     }
 
 
