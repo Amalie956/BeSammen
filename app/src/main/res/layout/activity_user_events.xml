@@ -32,7 +32,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="#E2FFDD"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/brunch" />
     </LinearLayout>
 
