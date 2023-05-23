@@ -1,5 +1,5 @@
 # Velkommen til vores contributing guide!
-Her kan du finde instruktionerne til at begynde at udvikle vores app samt yderligere få adgang til vores app 'BeSammen'
+Her kan du finde instruktionerne til at begynde at udvikle vores app samt yderligere få adgang til vores app 'BeSammen'.
 For at navigere hurtigt til specifikke afsnit i denne vejledning, kan du bruge indholdsfortegnelsesikonet ![billede](https://github.com/Amalie956/BeSammen/assets/112120321/64a3da23-f729-4b96-a3bb-8ed541ac9461), som findes i øverste venstre hjørne af dette dokument.
 
 ## Kom i gang
