@@ -7,5 +7,5 @@ For at navigere hurtigt til specifikke afsnit i denne vejledning, kan du bruge i
 Nedenfor vil du finde afsnit, der omhandler vigtige oplysninger, som det er vigtigt for nye medlemmer at være bekendt med.
 
 #### Android Studio
-Vi udvikler vores app i Android Studio. Du skal derfor [downloade ([https://developer.android.com/studio]) det.
+Vi udvikler vores app i Android Studio. Du skal derfor [downloade](https://developer.android.com/studio) det.
 
