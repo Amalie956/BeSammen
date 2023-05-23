@@ -124,8 +124,6 @@ public class UserRegistration extends AppCompatActivity {
 
 
     public void setUserData() {
-
-
         //TextInputEditText email = findViewById(R.id.email);
         TextInputEditText userName = findViewById(R.id.userName);
         AutoCompleteTextView age = findViewById(R.id.age);
@@ -160,57 +158,17 @@ public class UserRegistration extends AppCompatActivity {
                         System.out.println(e);
                     }
                 });
+                getUsername(getUsername);
+    }
 
+    public void getUsername(String username) {
+        Intent intent = new Intent(UserRegistration.this, WelcomeActivity.class);
+        intent.putExtra("userName", username);
+        startActivity(intent);
     }
 
 
 
-/*
-    public void setUserData(View view) {
-        AutoCompleteTextView userNameView = findViewById(R.id.userName);
-        String userName = userNameView.getText().toString();
-        AutoCompleteTextView ageView = findViewById(R.id.age);
-        String age = ageView.getText().toString();
-        AutoCompleteTextView genderView = findViewById(R.id.gender);
-        String gender = genderView.getText().toString();
-        AutoCompleteTextView diagnosisView = findViewById(R.id.diagnosis);
-        String diagnosis = diagnosisView.getText().toString();
-
-        // Create a Map object with user data
-        Map<String, Object> user = new HashMap<>();
-        user.put("userName", userName);
-        user.put("age", age);
-        user.put("gender", gender);
-        user.put("diagnosis", diagnosis);
-
-        // Save the data to the database
-        db.collection("Users")
-                .document(uid)
-                .set(user)
-                .addOnSuccessListener(aVoid -> System.out.println("Data added"))
-                .addOnFailureListener(e -> {
-                    System.out.println("Error adding data: " + e);
-                    e.printStackTrace();
-                });
-    }
-
-    public void getUserData(View view) {
-        db.collection("Users")
-                .document(uid)
-                .get()
-                .addOnSuccessListener(documentSnapshot -> {
-                    if (documentSnapshot.exists()) {
-                        System.out.println(documentSnapshot.getData());
-                    } else {
-                        System.out.println("Document does not exist");
-                    }
-                })
-                .addOnFailureListener(e -> {
-                    System.out.println("Error getting document: " + e);
-                    e.printStackTrace();
-                });
-    }
- */
 
 }
 

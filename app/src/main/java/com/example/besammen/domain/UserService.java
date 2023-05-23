@@ -49,8 +49,8 @@ public class UserService {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(context, "Register Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(context, WelcomeActivity.class);
-                            context.startActivity(intent);
+                            //Intent intent = new Intent(context, WelcomeActivity.class);
+                            //context.startActivity(intent);
                             // Finish the current activity if needed
                             // ((Activity) context).finish();
                         } else {
