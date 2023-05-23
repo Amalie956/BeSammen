@@ -50,7 +50,7 @@ public class WelcomeActivity extends AppCompatActivity {
             //imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { //Når man trykker på billedet, kommer man hen til Overview siden
-                Intent intent = new Intent(WelcomeActivity.this, Message.class);
+                Intent intent = new Intent(WelcomeActivity.this, OverviewActivity.class);
                 startActivity(intent);
             }
         });
