@@ -9,7 +9,8 @@ Nedenfor vil du finde afsnit, der omhandler vigtige oplysninger, som det er vigt
 Vi benytter Github Project til at planlægge vores opgaver. Disse opgaver bliver kaldt [*issue*](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues).
 Vores [*project*](https://github.com/users/Amalie956/projects/5/views/1) ser således ud: 
 
-![billede](https://github.com/Amalie956/BeSammen/assets/112120321/be6610a2-ee16-4bfe-a67e-45b36a689ea5)
+![image](https://github.com/Amalie956/BeSammen/assets/111952804/2f38d729-a11d-4464-9e0c-4f19710eb1f1)
+
 
 #### Issue
 Nævne hvordan man lavet et issue?
