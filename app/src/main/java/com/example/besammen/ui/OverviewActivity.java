@@ -70,6 +70,7 @@ ImageButton imageButtonAsk;
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(OverviewActivity.this, GroupChatOverview.class);
+                intent.putExtra("userName", username);
                 startActivity(intent);
             }
         });
