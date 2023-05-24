@@ -23,8 +23,10 @@ Vi udvikler vores app i Android Studio. Du skal derfor [downloade](https://devel
 Forklar hvordan man laver en branch for at udvikle i Android Studio?
 
 #### Contributors
-Hvis du vil i kontakt med andre i vores team kan du lave et mention ved at bruge `@` plus brugernavnet. Dette vil udløse en notifikation, så kan vedkommende hjælpe dig.
-- Abdul [@Abdu1RH](https://github.com/Abdu1RH), IT-Arkitektur studerende
+I dette team er vi fire medlemmer indtil videre. Alle fra Københavns Erhvervsakademi. Så er du advaret!
+
+Hvis du vil i kontakt med andre i vores team kan du lave et mention ved at bruge `@` plus brugernavnet. Dette vil udløse en notifikation, så kan vedkommende hjælpe dig. Nedenunder kan ses vores brugernavne:
+- [@Abdu1RH](https://github.com/Abdu1RH) `Abdul`, IT-Arkitektur studerende
 - [@Amalie956](https://github.com/Amalie956), IT-Arkitektur studerende
 - [@Catlover2200](https://github.com/Catlover2200), IT-Arkitektur studerende
 - [@Mahe0055](https://github.com/Mahe0055), IT-Arkitektur studerende
