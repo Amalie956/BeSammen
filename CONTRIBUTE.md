@@ -1,5 +1,5 @@
 # Velkommen til vores contributing guide! 👋
-Her kan du finde instruktionerne til at begynde at udvikle vores app samt yderligere få adgang til vores app 'BeSammen'.
+Her kan du finde instruktionerne til hvordan du begynder at udvikle i vores app og hvordan du får adgang til vores app 'BeSammen'.
 For at navigere hurtigt til specifikke afsnit i denne vejledning, kan du bruge indholdsfortegnelsesikonet <img src="https://github.com/Amalie956/BeSammen/assets/112120321/64a3da23-f729-4b96-a3bb-8ed541ac9461" width="19">, som findes i øverste venstre hjørne af dette dokument.
 
 
@@ -27,11 +27,20 @@ Vi har også tilføjet labels i forskellige farver og relevante emner til vores 
 #### <img src="https://github.com/Amalie956/BeSammen/assets/112120321/07280789-e60b-4567-a263-bf61d1180869" width="19"> Android Studio
 Vi udvikler vores app i Android Studio. Du skal derfor [downloade](https://developer.android.com/studio) det. [Her](https://developer.android.com/studio/install) er der en guide til hvordan du installere det
 
+Derefter skal du klone vores *repository* ned i dit projekt. Se hvordan du gør [her](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+
 ##### Branch
 Vi laver en ny branch for det issue, vi skal løse. Nedenunder ses guide i billeder:
 
 ![Slice 6(1)](https://github.com/Amalie956/BeSammen/assets/112120321/390d9855-86ae-4cc9-a337-d337c830eb53)
 
+Hvis du foretrækker at se guiden som en video, kan du gøre det nedenfor:
+<details><summary>
+</summary>
+
+  link video her
+
+</details>
 
 #### 👩‍👩‍👧‍👦Contributors
 I dette team er vi fire medlemmer indtil videre. Alle fra Københavns Erhvervsakademi. Så er du advaret!
