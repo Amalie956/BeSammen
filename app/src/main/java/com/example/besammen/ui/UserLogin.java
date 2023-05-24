@@ -27,14 +27,11 @@ public class UserLogin extends AppCompatActivity {
         Button buttonLogin = findViewById(R.id.btn_login);
         Button buttonCreateUser = findViewById(R.id.create_user);
 
-        buttonCreateUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(UserLogin.this, UserRegistration.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        setCreateUserClickListener(buttonCreateUser);
+        setLoginClickListener(editTextEmail, editTextPassword, buttonLogin);
+    }
+
+    private void setLoginClickListener(TextInputEditText editTextEmail, TextInputEditText editTextPassword, Button buttonLogin) {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +44,17 @@ public class UserLogin extends AppCompatActivity {
                 if (x == true) {
                     userLoginService.loginMethod(email, password);
                 }
+            }
+        });
+    }
+
+    private void setCreateUserClickListener(Button buttonCreateUser) {
+        buttonCreateUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserLogin.this, UserRegistration.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

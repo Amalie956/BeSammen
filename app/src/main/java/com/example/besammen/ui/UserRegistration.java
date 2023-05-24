@@ -10,26 +10,18 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.besammen.R;
 import com.example.besammen.domain.UserService;
 import com.example.besammen.domain.UserValidator;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -52,38 +44,7 @@ public class UserRegistration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_registration);
 
-        //age dropdown
-        autoCompleteTextView = findViewById(R.id.age);
-        adapterItem = new ArrayAdapter<String>(this, R.layout.dropdown_lists, items);
-        autoCompleteTextView.setAdapter(adapterItem);
-        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String item = parent.getItemAtPosition(position).toString();
-            }
-        });
-
-        //gender dropdown
-        autoCompleteTextView = findViewById(R.id.gender);
-        adapterItem = new ArrayAdapter<String>(this, R.layout.dropdown_lists, gender);
-        autoCompleteTextView.setAdapter(adapterItem);
-        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String item = parent.getItemAtPosition(position).toString();
-            }
-        });
-
-        //diagnosis dropdown
-        autoCompleteTextView = findViewById(R.id.diagnosis);
-        adapterItem = new ArrayAdapter<String>(this, R.layout.dropdown_lists, diagnosis);
-        autoCompleteTextView.setAdapter(adapterItem);
-        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String item = parent.getItemAtPosition(position).toString();
-            }
-        });
+        setupDropdowns();
 
 
         TextInputEditText editTextEmail = findViewById(R.id.email);
@@ -101,6 +62,17 @@ public class UserRegistration extends AppCompatActivity {
             }
         });
 
+        registerButtonClick(editTextEmail, editTextPassword, buttonReg);
+
+    }
+
+    private void setupDropdowns() {
+        ageDropdown();
+        genderDropdown();
+        diagnosisDropdown();
+    }
+
+    private void registerButtonClick(TextInputEditText editTextEmail, TextInputEditText editTextPassword, Button buttonReg) {
         buttonReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -116,7 +88,46 @@ public class UserRegistration extends AppCompatActivity {
                 setUserData();
             }
         });
+    }
 
+    private void diagnosisDropdown() {
+        //diagnosis dropdown
+        autoCompleteTextView = findViewById(R.id.diagnosis);
+        adapterItem = new ArrayAdapter<String>(this, R.layout.dropdown_lists, diagnosis);
+        autoCompleteTextView.setAdapter(adapterItem);
+        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+            }
+        });
+    }
+
+    private void genderDropdown() {
+        //gender dropdown
+        autoCompleteTextView = findViewById(R.id.gender);
+        adapterItem = new ArrayAdapter<String>(this, R.layout.dropdown_lists, gender);
+        autoCompleteTextView.setAdapter(adapterItem);
+        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+            }
+        });
+    }
+
+
+    private void ageDropdown() {
+        //age dropdown
+        autoCompleteTextView = findViewById(R.id.age);
+        adapterItem = new ArrayAdapter<String>(this, R.layout.dropdown_lists, items);
+        autoCompleteTextView.setAdapter(adapterItem);
+        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+            }
+        });
     }
 
 
