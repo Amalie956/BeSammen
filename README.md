@@ -13,9 +13,9 @@ Denne README.md fil indeholder
 BeSammen er et fællesskab, hvor mennesker med samme diagnose mødes online i mindre grupper. I din tilknyttede BeSammen gruppe er der mulighed for trygt at dele tanker, følelser og erfaringer både før, under og efter et behandlingsforløb.
 
 
-Denne applikation er baseret på en guide/præsentation af BeSammen. 
-Applikationen er inspireret af (Link til BeSammens mockup?)
-Applikationens målgruppen er individer med ADHD i aldersgruppen 18-30.
+- Denne applikation er baseret på en guide/præsentation af BeSammen. 
+- Applikationen er inspireret af (Link til BeSammens mockup?)
+- Applikationens målgruppen er individer med ADHD i aldersgruppen 18-30.
 Applikationen gøre det muligt for individer med ADHD i aldersgruppen 18-30, at deltage i en gruppechat og at deltage til forskellige begivenheder.
 
 
