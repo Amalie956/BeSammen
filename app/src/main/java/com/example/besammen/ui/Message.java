@@ -11,18 +11,15 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.example.besammen.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -33,18 +30,21 @@ public class Message extends AppCompatActivity {
     Button send;
 
     EditText ed;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
-        send=findViewById(R.id.send);
+
+        username = getIntent().getStringExtra("userName");
+
+        send = findViewById(R.id.send);
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         ArrayList al = new ArrayList();
-        lv=findViewById(R.id.lv);
-        ed=findViewById(R.id.edmsg);
+        lv = findViewById(R.id.lv);
+        ed = findViewById(R.id.edmsg);
         db.getReference("Messages").addChildEventListener(new ChildEventListener() {
-
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 Log.d("Message", "Child added: " + snapshot.getValue().toString());
@@ -81,13 +81,12 @@ public class Message extends AppCompatActivity {
             public void onClick(View view) {
                 FirebaseAuth auth = FirebaseAuth.getInstance();
                 Date getDate = Calendar.getInstance().getTime();
-                db.getReference("Messages").child(auth.getUid()+getDate).setValue(ed.getText().toString());
+                db.getReference("Messages").child(auth.getUid() + getDate).setValue(username + "\n" + ed.getText().toString());
+
             }
         });
 
 
-
     }
-
 
 }

@@ -27,6 +27,8 @@ public class GroupChatOverview extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_chat_overview);
 
+        String username = getIntent().getStringExtra("userName");
+
         imageViewGroupChatForAll = findViewById(R.id.imageView25);
 
         imageViewWomen1821 = findViewById(R.id.imageView10);
@@ -39,6 +41,7 @@ public class GroupChatOverview extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(GroupChatOverview.this, Message.class);
+                intent.putExtra("userName", username);
                 startActivity(intent);
             }
         });
