@@ -27,3 +27,6 @@ Forklar hvordan man laver en branch for at udvikle i Android Studio?
 - [Amalie, IT-Arkitektur studerende](https://github.com/Amalie956)
 - [Klara, IT-Arkitektur studerende](https://github.com/Catlover2200)
 - [Maheen, IT-Arkitektur studerende](https://github.com/Mahe0055)
+
+@Amalie956
+
