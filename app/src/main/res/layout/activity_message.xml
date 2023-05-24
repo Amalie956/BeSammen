@@ -14,12 +14,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="1dp">
 
-        <TextView
-            android:id="@+id/nameTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Navn" />
-
         <ListView
             android:id="@+id/lv"
             android:layout_width="match_parent"

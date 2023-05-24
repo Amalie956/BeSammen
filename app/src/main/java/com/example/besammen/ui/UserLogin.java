@@ -39,9 +39,9 @@ public class UserLogin extends AppCompatActivity {
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
 
-                boolean x = userLoginValidator.loginValidator(email, password);
+                boolean isUserInputValid = userLoginValidator.loginValidator(email, password);
 
-                if (x == true) {
+                if (isUserInputValid == true) {
                     userLoginService.loginMethod(email, password);
                 }
             }

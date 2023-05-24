@@ -28,7 +28,7 @@ import java.util.Map;
 
 public class UserRegistration extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+    //FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
     String[] items = {"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
     String[] gender = {"Kvinde", "Mand", "Andet"};
