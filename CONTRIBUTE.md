@@ -20,9 +20,9 @@ Vores [*project*](https://github.com/users/Amalie956/projects/5/views/1) ser så
 
 
 ##### Issue
-Vi har brugt issues som opgaver der skulle løses i projektet. Vi har givet hver issue en kortfattet overskrift.
-For enkelte issues, har vi assigned en contributor til opgaven, mens de resterende været fælles opgaver og derfor var der ikke behov for at assigne alle contributors for flertallet af issues.
-Vi har også tilføjet labels i forskellige farver og relevante emner til vores issues, som de tilhører. Det hjælper os med at få bedre overblik over hvilke opgaver har med hvilke emner at gøre med, som også ses på det ovenstående billede i drope down menuen &uarr;
+Vi bruger issues som opgaver der skal løses i projektet. Vi giver hver issue en kortfattet overskrift.
+For enkelte issues, har vi assigned en contributor til opgaven, mens de resterende er fælles opgaver og derfor er der ikke behov for at assigne alle contributors for flertallet af issues.
+Vi tilføjer labels i forskellige farver og navngiver relevante emner til vores issues, som de tilhører. Det hjælper os med at få bedre overblik over hvilke opgaver har med hvilke emner at gøre med, som også ses på det ovenstående billede i drope down menuen &uarr;
 
 #### <img src="https://github.com/Amalie956/BeSammen/assets/112120321/07280789-e60b-4567-a263-bf61d1180869" width="19"> Android Studio
 Vi udvikler vores app i Android Studio. Du skal derfor [downloade](https://developer.android.com/studio) det. [Her](https://developer.android.com/studio/install) er der en guide til hvordan du installere det
