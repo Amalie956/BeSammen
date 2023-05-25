@@ -22,7 +22,6 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 public class WelcomeActivity extends AppCompatActivity {
-
     Button button;
     ImageView imageView;
 
@@ -33,35 +32,35 @@ public class WelcomeActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageViewButton);
         button = findViewById(R.id.continuebtn);
 
-       // String s = getIntent().getStringExtra("userName");
-        showUser(getIntent().getStringExtra("userName"));
+        String username = getIntent().getStringExtra("userName");
+        String age = getIntent().getStringExtra("age");
+        showUser(username);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(WelcomeActivity.this, OverviewActivity.class);
+                intent.putExtra("userName", username);
+                intent.putExtra("age", age);
                 startActivity(intent);
             }
         });
 
 
         button.setOnClickListener(new View.OnClickListener() {
-
-            //imageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { //Når man trykker på billedet, kommer man hen til Overview siden
+            public void onClick(View view) {
                 Intent intent = new Intent(WelcomeActivity.this, OverviewActivity.class);
+                intent.putExtra("userName", username);
+                intent.putExtra("age", age);
                 startActivity(intent);
             }
         });
     }
 
     public void showUser(String username) {
-        //Hente brugernavnet
-        //String username = getIntent().getStringExtra("userName");
-        //Få brugernavnet i textviewet med id'et 'renderUsername'
-        TextView welcomeTextView = findViewById(R.id.renderUsername);
-        welcomeTextView.setText(username);
+        TextView renderUsernameOnWelcomeActivity = findViewById(R.id.renderUsername);
+        renderUsernameOnWelcomeActivity.setText("Velkommen " + username);
     }
 
 }

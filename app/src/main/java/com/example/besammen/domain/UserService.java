@@ -30,13 +30,12 @@ public class UserService {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(context, OverviewActivity.class);
                             context.startActivity(intent);
-                            // Finish the current activity if needed
-                            // ((Activity) context).finish();
+
                         } else {
-                            Toast.makeText(context, "Login Fail", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Du kunne ikke logge ind. Prøv igen", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -48,13 +47,13 @@ public class UserService {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(context, "Register Successful", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(context, "Register Successful", Toast.LENGTH_SHORT).show();
                             //Intent intent = new Intent(context, WelcomeActivity.class);
                             //context.startActivity(intent);
                             // Finish the current activity if needed
                             // ((Activity) context).finish();
                         } else {
-                            Toast.makeText(context, "Register Fail", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Fejl i oprettelse af bruger. Prøv igen", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
