@@ -50,7 +50,6 @@ public class UserRegistration extends AppCompatActivity {
         });
 
         registerButtonClick(buttonReg);
-
     }
 
     private void setupDropdowns() {
@@ -94,7 +93,6 @@ public class UserRegistration extends AppCompatActivity {
         });
     }
 
-
     private void ageDropdown() {
         //age dropdown
         autoCompleteTextView = findViewById(R.id.age);
@@ -107,7 +105,6 @@ public class UserRegistration extends AppCompatActivity {
             }
         });
     }
-
 
     public User getUserFromInputFields() {
         TextInputEditText userName = findViewById(R.id.userName);

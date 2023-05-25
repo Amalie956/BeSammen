@@ -23,7 +23,6 @@ public class UserEvents extends AppCompatActivity {
     ImageButton imageButtonCreative;
     ImageButton imageButtonWebinar;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

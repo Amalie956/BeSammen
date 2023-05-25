@@ -31,7 +31,6 @@ ImageButton imageButtonFriends;
 ImageButton imageButtonKnowledge;
 ImageButton imageButtonAsk;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +64,6 @@ ImageButton imageButtonAsk;
             }
         });
 
-
         imageButtonGroupchat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,6 +81,7 @@ ImageButton imageButtonAsk;
             }
 
         });
+
         imageButtonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,25 +96,26 @@ ImageButton imageButtonAsk;
                 Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
             }
         });
+
         imageButtonFriends.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
             }
         });
+
         imageButtonKnowledge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
             }
         });
+
         imageButtonAsk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
-
 }

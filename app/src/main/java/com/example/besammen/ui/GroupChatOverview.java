@@ -16,15 +16,10 @@ public class GroupChatOverview extends AppCompatActivity {
     ImageView imageViewWomen1821;
     ImageView imageViewAllWomen;
     ImageView imageViewYoungMothers;
-
     ImageView admin1;
-
     ImageView admin2;
-
     ImageView moderator1;
-
     ImageView moderator2;
-
     ImageView admin3;
 
 
@@ -68,50 +63,55 @@ public class GroupChatOverview extends AppCompatActivity {
                 Toast.makeText(GroupChatOverview.this, "This group chat is under development", Toast.LENGTH_SHORT).show();
             }
         });
+
         imageViewAllWomen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GroupChatOverview.this, "This group chat is under development", Toast.LENGTH_SHORT).show();
             }
         });
+
         imageViewYoungMothers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GroupChatOverview.this, "This group chat is under development", Toast.LENGTH_SHORT).show();
             }
         });
+
         admin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GroupChatOverview.this, "Admin is currently getting assigned", Toast.LENGTH_SHORT).show();
             }
         });
+
         admin2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GroupChatOverview.this, "Admin is currently getting assigned", Toast.LENGTH_SHORT).show();
             }
         });
+
         moderator1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GroupChatOverview.this, "Moderator is currently getting assigned", Toast.LENGTH_SHORT).show();
             }
         });
+
         moderator2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GroupChatOverview.this, "Moderator is currently getting assigned", Toast.LENGTH_SHORT).show();
             }
         });
+
         admin3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GroupChatOverview.this, " Admin is currently getting assigned", Toast.LENGTH_SHORT).show();
             }
         });
-
-
 
     }
 }
