@@ -10,12 +10,12 @@ import android.widget.Button;
 
 import com.example.besammen.R;
 import com.example.besammen.domain.UserService;
-import com.example.besammen.domain.UserValidator;
+import com.example.besammen.domain.UserValidatorService;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class UserLogin extends AppCompatActivity {
     UserService userLoginService = new UserService(this);
-    UserValidator userLoginValidator = new UserValidator(this);
+    UserValidatorService userLoginValidator = new UserValidatorService(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class UserLogin extends AppCompatActivity {
                 boolean isUserInputValid = userLoginValidator.loginValidator(email, password);
 
                 if (isUserInputValid == true) {
-                    userLoginService.loginMethod(email, password);
+                    userLoginService.userSignIn(email, password);
                 }
             }
         });

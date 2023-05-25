@@ -25,6 +25,4 @@ public class Event_meet_people extends AppCompatActivity {
         Toast.makeText(this, "Du er nu tilmeldt", Toast.LENGTH_SHORT).show();
     }
 
-
-
 }

@@ -47,7 +47,7 @@
             android:name=".domain.User"
             android:exported="false" />
         <activity
-            android:name=".domain.UserValidator"
+            android:name=".domain.UserValidatorService"
 
             android:exported="false" />
         <activity

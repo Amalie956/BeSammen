@@ -43,6 +43,7 @@ public class Message extends AppCompatActivity {
         ArrayList arrayListForMessages = new ArrayList();
         listViewForMessages = findViewById(R.id.listViewForMessages);
         editTextForMessage = findViewById(R.id.editTextForMessage);
+
         db.getReference("Messages").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
