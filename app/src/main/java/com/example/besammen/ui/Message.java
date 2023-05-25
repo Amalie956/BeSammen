@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.besammen.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -73,7 +74,7 @@ public class Message extends AppCompatActivity {
                 FirebaseAuth auth = FirebaseAuth.getInstance();
                 Date getDate = Calendar.getInstance().getTime();
                 db.getReference("Messages").child(auth.getUid() + getDate).setValue(username + "\n" + editTextForMessage.getText().toString());
-
+                Toast.makeText(Message.this, "Sent", Toast.LENGTH_SHORT).show();
             }
         });
 
