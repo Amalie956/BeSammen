@@ -13,7 +13,17 @@ BeSammen er et fællesskab, hvor mennesker med samme diagnose kan mødes online 
 - Denne applikation er baseret på en guide/præsentation af BeSammen. 
 - Applikationen er en videreudvikling af vores [mockup](https://app.uizard.io/p/3a84d005)
 - Applikationens målgruppe er individer med ADHD i aldersgruppen 18-30.
-Applikationen gøre det muligt for individer med ADHD i aldersgruppen 18-30, at deltage i en gruppechat og at deltage til forskellige begivenheder.
+- Applikationen gøre det muligt for individer med ADHD i aldersgruppen 18-30, at deltage i en gruppechat og at deltage til forskellige begivenheder.
+- For at se de forskellige funktioner og elementer af BeSammen appen kan se du videoen nedenfor:
+
+<details><summary>
+&larr; Klik for at se video
+</summary>
+  
+https://github.com/Amalie956/BeSammen/assets/112120321/1c13e423-ae4d-423f-b698-8c025f3ab2f1
+
+  
+</details>
 
 Projektets rapport kan findes her (link til vores rapport)
 
