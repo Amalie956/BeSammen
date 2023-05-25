@@ -37,7 +37,7 @@
 
         <ImageButton
             android:id="@+id/imageViewButton7"
-            android:layout_width="138dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#E2FFDD"
             android:scaleType="fitCenter"
