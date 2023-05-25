@@ -26,7 +26,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Message extends AppCompatActivity {
-
     ListView listViewForMessages;
     Button sendMessageButton;
     EditText editTextForMessage;
@@ -77,6 +76,5 @@ public class Message extends AppCompatActivity {
                 Toast.makeText(Message.this, "Sent", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }
