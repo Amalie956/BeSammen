@@ -7,16 +7,41 @@
     android:background="#E2FFDD"
     tools:context=".ui.OverviewActivity">
 
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="394dp"
+        android:layout_height="69dp"
+        android:background="@drawable/header"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="100dp"
         android:layout_height="120dp"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
 
         <ImageButton
             android:id="@+id/imageButton7"
@@ -41,11 +66,11 @@
         android:id="@+id/linearLayout2"
         android:layout_width="100dp"
         android:layout_height="120dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="65dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
 
         <ImageButton
             android:id="@+id/imageButton8"
@@ -125,7 +150,7 @@
         android:id="@+id/linearLayout6"
         android:layout_width="100dp"
         android:layout_height="120dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="65dp"
         android:layout_marginTop="45dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -156,6 +181,7 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="64dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
@@ -181,8 +207,9 @@
         android:layout_width="100dp"
         android:layout_height="120dp"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginBottom="45dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
@@ -198,18 +225,18 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Spørg"
+            android:text="@string/sp_rg"
             android:textAlignment="center"
             android:textColor="#0C4819"
             android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout13"
         android:layout_width="100dp"
         android:layout_height="120dp"
-        android:layout_marginTop="45dp"
         android:layout_marginEnd="65dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="45dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -234,15 +261,33 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="BeSammen"
-        android:textAlignment="viewStart"
+    <LinearLayout
+        android:layout_width="81dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/be"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sammen"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
