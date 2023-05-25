@@ -7,30 +7,38 @@
     android:background="#E2FFDD"
     tools:context=".ui.OverviewActivity">
 
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="394dp"
+        android:layout_height="69dp"
+        android:background="@drawable/header"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UnknownIdInLayout" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Brunch"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
 
         <ImageButton
             android:id="@+id/imageViewButton7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
             android:background="#E2FFDD"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/brunch" />
@@ -38,27 +46,21 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="65dp"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mød hinanden"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
 
         <ImageButton
             android:id="@+id/meet_people"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#E2FFDD"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/meet_people" />
@@ -66,55 +68,39 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <TextView
-            android:id="@+id/textView7"
+        <ImageView
+            android:id="@+id/imageView11"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mindfulness"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
-
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#E2FFDD"
-            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/mindfulness1" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="64dp"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="35dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gruppeterapi"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
 
         <ImageButton
             android:id="@+id/imageButton10"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@drawable/round_corners"
             android:scaleType="centerCrop"
             android:src="@drawable/gruppeterapi" />
@@ -122,27 +108,20 @@
 
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Handle makker"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
-
         <ImageButton
             android:id="@+id/imageButton11"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#E2FFDD"
             android:scaleType="centerCrop"
             android:src="@drawable/handle_makker" />
@@ -150,98 +129,102 @@
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="64dp"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="35dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Klatre"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
 
         <ImageButton
             android:id="@+id/imageButton12"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#E2FFDD"
             android:scaleType="centerCrop"
             android:src="@drawable/climb" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="45dp"
+        android:id="@+id/linearLayout10"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Krea"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
-
         <ImageButton
             android:id="@+id/imageButton13"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#E2FFDD"
             android:scaleType="centerCrop"
             android:src="@drawable/krea" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/linearLayout12"
+        android:layout_width="153dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="35dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Webinar"
-            android:textAlignment="center"
-            android:textColor="#0C4819"
-            android:textSize="16sp" />
+        app:layout_constraintStart_toEndOf="@+id/linearLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <ImageButton
             android:id="@+id/imageButton14"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#E2FFDD"
             android:scaleType="centerCrop"
             android:src="@drawable/webinar" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="BeSammen"
-        android:textAlignment="viewStart"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/be"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/sammen"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/begivenheder"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

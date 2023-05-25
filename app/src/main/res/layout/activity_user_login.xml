@@ -46,16 +46,16 @@
             android:layout_margin="6dp"
             android:backgroundTint="@color/white"
             android:hint="@string/login_password" />
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="325dp"
-        android:layout_height="65dp"
-        android:layout_margin="6dp"
-        android:backgroundTint="@color/green_200"
-        android:text="@string/login_button"
-        android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="299dp"
+            android:layout_height="69dp"
+            android:layout_margin="6dp"
+            android:backgroundTint="@color/green_200"
+            android:text="@string/login_button"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/forgot_password"
@@ -64,13 +64,14 @@
         android:layout_margin="6dp"
         android:gravity="center"
         android:text="@string/forgot_password"
+
         android:textSize="12sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/create_user"
-        android:layout_width="325dp"
-        android:layout_height="65dp"
+        android:layout_width="299dp"
+        android:layout_height="69dp"
         android:layout_margin="6dp"
         android:backgroundTint="@color/green_200"
         android:text="@string/create_user"
