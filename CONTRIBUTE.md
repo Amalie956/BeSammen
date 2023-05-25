@@ -34,13 +34,6 @@ Vi laver en ny branch for det issue, vi skal løse. Nedenunder ses guide i bille
 
 ![Slice 6(1)](https://github.com/Amalie956/BeSammen/assets/112120321/390d9855-86ae-4cc9-a337-d337c830eb53)
 
-Hvis du foretrækker at se guiden som en video, kan du gøre det nedenfor:
-<details><summary>
-</summary>
-
-  link video her
-
-</details>
 
 #### 👩‍👩‍👧‍👦Contributors
 I dette team er vi fire medlemmer indtil videre. Alle fra Københavns Erhvervsakademi. Så er du advaret!
