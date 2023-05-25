@@ -16,18 +16,12 @@ import com.example.besammen.R;
 public class UserEvents extends AppCompatActivity {
     ImageButton imageButtonMeetPeople;
     ImageButton imageButtonBrunch;
-    ImageButton imageButtonMindfulness;
+    ImageView imageViewMindfulness;
     ImageButton imageButtonGroupTherapy;
     ImageButton imageButtonShoppingMate;
     ImageButton imageButtonKlatre;
     ImageButton imageButtonCreative;
-
     ImageButton imageButtonWebinar;
-
-
-
-
-
 
 
     @Override
@@ -39,7 +33,7 @@ public class UserEvents extends AppCompatActivity {
 
         imageButtonBrunch = findViewById(R.id.imageViewButton7);
 
-        imageButtonMindfulness = findViewById(R.id.imageButton9);
+        imageViewMindfulness = findViewById(R.id.imageView11);
 
         imageButtonGroupTherapy = findViewById(R.id.imageButton10);
 
@@ -65,7 +59,7 @@ public class UserEvents extends AppCompatActivity {
                 Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
             }
         });
-        imageButtonMindfulness.setOnClickListener(new View.OnClickListener() {
+        imageViewMindfulness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
@@ -105,11 +99,6 @@ public class UserEvents extends AppCompatActivity {
             }
         });
 
-
-
-
     }
-
-
 
 }
