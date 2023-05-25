@@ -8,11 +8,13 @@
 
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="411dp"
-        android:layout_height="72dp"
+        android:id="@+id/header"
+        android:layout_width="393dp"
+        android:layout_height="78dp"
         android:background="@drawable/header"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,21 +23,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gruppe_chat"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.677" />
 
     <LinearLayout
         android:id="@+id/linearLayout8"
-        android:layout_width="412dp"
-        android:layout_height="64dp"
+        android:layout_width="399dp"
+        android:layout_height="56dp"
         android:background="@color/green_600"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/header">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -68,7 +71,7 @@
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/profile_pic_man1" />
 
@@ -76,10 +79,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout7"
-        android:layout_width="417dp"
-        android:layout_height="22dp"
+        android:layout_width="393dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/groupchat_header"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
@@ -102,7 +107,7 @@
 
         <TextView
             android:id="@+id/textView16"
-            android:layout_width="80dp"
+            android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/moderator"
@@ -126,8 +131,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="731dp"
+        android:id="@+id/linearLayout9"
+        android:layout_width="389dp"
+        android:layout_height="573dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -136,30 +142,27 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="174dp"
+            android:layout_height="140dp"
             android:background="@drawable/header">
 
             <LinearLayout
-                android:layout_width="192dp"
+                android:layout_width="187dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/girls" />
+                    android:layout_width="175dp"
+                    android:layout_height="130dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/young_girls" />
 
-                <ImageView
-                    android:id="@+id/imageView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/girls" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="215dp"
-                android:layout_height="match_parent"
+                android:layout_width="189dp"
+                android:layout_height="116dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -172,7 +175,7 @@
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
-                    android:layout_height="87dp"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:text="Kvinder 18-21" />
             </LinearLayout>
@@ -181,18 +184,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="186dp"
+            android:layout_height="153dp"
             android:background="@drawable/header">
 
             <LinearLayout
-                android:layout_width="192dp"
+                android:layout_width="187dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView24"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="173dp"
+                    android:layout_height="142dp"
+                    android:paddingTop="10dp"
                     app:srcCompat="@drawable/women" />
             </LinearLayout>
 
@@ -203,7 +207,7 @@
 
                 <TextView
                     android:id="@+id/textView27"
-                    android:layout_width="215dp"
+                    android:layout_width="202dp"
                     android:layout_height="wrap_content"
                     android:paddingTop="40dp"
                     android:text="@string/adhd" />
@@ -219,49 +223,44 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="186dp"
+            android:layout_height="140dp"
             android:background="@drawable/header">
 
             <LinearLayout
-                android:layout_width="159dp"
+                android:layout_width="153dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView25"
-                    android:layout_width="191dp"
+                    android:layout_width="176dp"
                     android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
                     app:srcCompat="@drawable/group" />
-
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="87dp"
-                    android:layout_weight="1"
-                    android:text="Kvinder 18-21" />
 
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="190dp"
-                android:layout_height="match_parent"
+                android:layout_width="168dp"
+                android:layout_height="124dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView33"
                     android:layout_width="match_parent"
-                    android:layout_height="14dp"
+                    android:layout_height="32dp"
                     android:layout_weight="1"
-                    android:paddingTop="40dp"
+                    android:paddingTop="10dp"
                     android:text="@string/adhd" />
 
                 <TextView
                     android:id="@+id/textView36"
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
+                    android:layout_width="171dp"
+                    android:layout_height="95dp"
                     android:layout_weight="1"
                     android:text="18-25, alle køn" />
             </LinearLayout>
@@ -270,23 +269,25 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="189dp"
+            android:layout_height="140dp"
             android:background="@drawable/header">
 
             <LinearLayout
-                android:layout_width="189dp"
+                android:layout_width="187dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView23"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/young_girls" />
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/girls" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="177dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
@@ -295,18 +296,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="12dp"
                     android:layout_weight="1"
-                    android:paddingTop="40dp"
+                    android:paddingTop="10dp"
                     android:text="@string/adhd" />
 
                 <TextView
                     android:id="@+id/textView38"
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
+                    android:layout_width="176dp"
+                    android:layout_height="93dp"
                     android:layout_weight="1"
-                    android:text="Unge mødre" />
+                    android:text="@string/unge_m_dre" />
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

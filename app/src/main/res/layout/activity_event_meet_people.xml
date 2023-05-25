@@ -6,50 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".ui.Event_meet_people">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="586dp"
-        android:layout_height="382dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
-        app:srcCompat="@drawable/meet_people"
-        tools:layout_editor_absoluteX="-66dp"
-        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="396dp"
+        android:layout_height="75dp"
+        android:background="@drawable/header"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/participate_button"
         android:layout_width="333dp"
         android:layout_height="55dp"
-        android:text="Deltager"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/green_200"
+        android:text="@string/deltager"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         android:onClick="participateButton"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.901" />
 
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lær hinanden at kende"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/l_r_hinanden_at_kende"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="410dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="329dp"
         android:layout_height="62dp"
-        android:text="Til dette event kan I mødes og snakke sammen"
+        android:text="@string/til_dette_event_kan_i_m_des_og_snakke_sammen"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/participate_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="667dp"
+        android:layout_height="430dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="461dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/meet" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/be"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/sammen"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/begivenheder"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toTopOf="@+id/header" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
