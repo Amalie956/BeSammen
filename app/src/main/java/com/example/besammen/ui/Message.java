@@ -74,7 +74,7 @@ public class Message extends AppCompatActivity {
                 FirebaseAuth auth = FirebaseAuth.getInstance();
                 Date getDate = Calendar.getInstance().getTime();
                 db.getReference("Messages").child(auth.getUid() + getDate).setValue(username + "\n" + editTextForMessage.getText().toString());
-                Toast.makeText(Message.this, "Sent", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Message.this, "Beskeden er sendt. Du kan nu scrolle ned på chatten", Toast.LENGTH_SHORT).show();
             }
         });
     }
