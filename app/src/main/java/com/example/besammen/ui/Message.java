@@ -24,7 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-
+//Abdul
 public class Message extends AppCompatActivity {
     ListView listViewForMessages;
     Button sendMessageButton;

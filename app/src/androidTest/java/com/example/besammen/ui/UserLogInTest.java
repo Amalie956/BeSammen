@@ -35,14 +35,14 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class TestingUserLogin {
+public class UserLogInTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void testingUserLogin() {
+    public void UserLogInTest() {
         ViewInteraction textInputEditText = onView(
                 allOf(withId(R.id.email),
                         childAtPosition(
@@ -72,6 +72,7 @@ public class TestingUserLogin {
                                 1),
                         isDisplayed()));
         materialButton.perform(click());
+
         try {
             Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
         } catch (InterruptedException e) {
