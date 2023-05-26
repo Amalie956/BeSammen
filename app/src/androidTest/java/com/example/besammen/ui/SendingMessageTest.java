@@ -32,14 +32,14 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class TestingSendingMessage {
+public class SendingMessageTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void testingSendingMessage() {
+    public void SendingMessageTest() {
         ViewInteraction textInputEditText = onView(
                 allOf(withId(R.id.email),
                         childAtPosition(

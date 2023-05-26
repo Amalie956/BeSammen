@@ -1,6 +1,5 @@
 package com.example.besammen.ui;
 
-
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
@@ -28,21 +27,20 @@ import com.example.besammen.R;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
-import org.hamcrest.core.IsInstanceOf;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class TestingUserLoggingOut {
+public class JoiningMeetEventTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void testingUserLoggingOut() {
+    public void JoiningMeetEventTest() {
         ViewInteraction textInputEditText = onView(
                 allOf(withId(R.id.email),
                         childAtPosition(
@@ -72,7 +70,6 @@ public class TestingUserLoggingOut {
                                 1),
                         isDisplayed()));
         materialButton.perform(click());
-
         try {
             Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
         } catch (InterruptedException e) {
@@ -80,12 +77,12 @@ public class TestingUserLoggingOut {
         }
 
         ViewInteraction appCompatImageButton = onView(
-                allOf(withId(R.id.imageButton14),
+                allOf(withId(R.id.imageButton10),
                         childAtPosition(
-                                allOf(withId(R.id.linearLayout13),
+                                allOf(withId(R.id.linearLayout4),
                                         childAtPosition(
                                                 withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
-                                                9)),
+                                                5)),
                                 0),
                         isDisplayed()));
         appCompatImageButton.perform(click());
@@ -96,19 +93,42 @@ public class TestingUserLoggingOut {
             throw new RuntimeException(e);
         }
 
+        ViewInteraction appCompatImageButton2 = onView(
+                allOf(withId(R.id.meet_people),
+                        childAtPosition(
+                                allOf(withId(R.id.linearLayout2),
+                                        childAtPosition(
+                                                withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
+                                                2)),
+                                0),
+                        isDisplayed()));
+        appCompatImageButton2.perform(click());
+
+        try {
+            Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         ViewInteraction materialButton2 = onView(
-                allOf(withId(R.id.button4), withText("Log ud"),
+                allOf(withId(R.id.participate_button), withText("Deltager"),
                         childAtPosition(
                                 childAtPosition(
-                                        withClassName(is("android.widget.LinearLayout")),
-                                        6),
-                                0),
+                                        withId(android.R.id.content),
+                                        0),
+                                1),
                         isDisplayed()));
         materialButton2.perform(click());
 
+        try {
+            Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         ViewInteraction button = onView(
-                allOf(withId(R.id.btn_login), withText("LOG IND"),
-                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.widget.LinearLayout.class))),
+                allOf(withId(R.id.participate_button), withText("DELTAGER"),
+                        withParent(withParent(withId(android.R.id.content))),
                         isDisplayed()));
         button.check(matches(isDisplayed()));
     }
