@@ -43,7 +43,7 @@ Vi har iøvrigt også lavet nogle ui test, som ikke er blevet automatiseret endn
 I dette team er vi fire medlemmer indtil videre. Alle fra Københavns Erhvervsakademi. Så er du advaret!
 
 Hvis du vil i kontakt med andre i vores team kan du lave et mention ved at bruge `@` plus brugernavnet. Dette vil udløse en notifikation, så kan vedkommende hjælpe dig. Nedenunder kan ses vores brugernavne:
-- [Abdul](https://github.com/Abdu1RH) &rarr; `@Abdu1RH` , IT-Arkitektur studerende ([Se alle Abduls commits](https://github.com/Amalie956/BeSammen/commits?author=Abdu1RH))
-- [Amalie](https://github.com/Amalie956) &rarr; `@Amalie956`, IT-Arkitektur studerende ([Se alle Amalies commits](https://github.com/Amalie956/BeSammen/commits?author=Amalie956))
-- [Klara](https://github.com/Catlover2200) &rarr; `@Catlover2200`, IT-Arkitektur studerende ([Se alle Klaras commits](https://github.com/Amalie956/BeSammen/commits?author=Catlover2200))
-- [Maheen](https://github.com/Mahe0055) &rarr; `@Mahe0055`, IT-Arkitektur studerende ([Se alle Maheens commits](https://github.com/Amalie956/BeSammen/commits?author=Mahe0055 ))
+- [Abdul](https://github.com/Abdu1RH) &rarr; `@Abdu1RH`([Se alle Abduls commits](https://github.com/Amalie956/BeSammen/commits?author=Abdu1RH))
+- [Amalie](https://github.com/Amalie956) &rarr; `@Amalie956` ([Se alle Amalies commits](https://github.com/Amalie956/BeSammen/commits?author=Amalie956))
+- [Klara](https://github.com/Catlover2200) &rarr; `@Catlover2200`([Se alle Klaras commits](https://github.com/Amalie956/BeSammen/commits?author=Catlover2200))
+- [Maheen](https://github.com/Mahe0055) &rarr; `@Mahe0055`([Se alle Maheens commits](https://github.com/Amalie956/BeSammen/commits?author=Mahe0055 ))
