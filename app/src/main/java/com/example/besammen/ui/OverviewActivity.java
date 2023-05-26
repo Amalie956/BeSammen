@@ -31,6 +31,7 @@ ImageButton imageButtonFriends;
 ImageButton imageButtonKnowledge;
 ImageButton imageButtonAsk;
 
+//Maheen - designet layoutet
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
