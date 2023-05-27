@@ -74,7 +74,7 @@ public class UserLogInTest {
         materialButton.perform(click());
 
         try {
-            Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

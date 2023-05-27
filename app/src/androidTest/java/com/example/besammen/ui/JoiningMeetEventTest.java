@@ -71,7 +71,7 @@ public class JoiningMeetEventTest {
                         isDisplayed()));
         materialButton.perform(click());
         try {
-            Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -88,7 +88,7 @@ public class JoiningMeetEventTest {
         appCompatImageButton.perform(click());
 
         try {
-            Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -105,7 +105,7 @@ public class JoiningMeetEventTest {
         appCompatImageButton2.perform(click());
 
         try {
-            Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -121,7 +121,7 @@ public class JoiningMeetEventTest {
         materialButton2.perform(click());
 
         try {
-            Thread.sleep(1000); // Waits for 1000 milliseconds (1 second)
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

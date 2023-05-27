@@ -10,9 +10,7 @@ Nedenfor vil du finde afsnit, der omhandler vigtige oplysninger, som det er vigt
 Vi benytter Github Project til at planlægge vores opgaver. Disse opgaver bliver kaldt [*issues*](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues).
 
 Vores [*project*](https://github.com/users/Amalie956/projects/5/views/1) ser således ud: 
-<details><summary>
-
-</summary>
+<details><summary>Kanban (klik for at ekspandere)</summary>
 
 ![image](https://github.com/Amalie956/BeSammen/assets/111952804/2f38d729-a11d-4464-9e0c-4f19710eb1f1)
 
@@ -34,12 +32,18 @@ Vi laver en ny branch for det issue, vi skal løse. Nedenunder ses guide i bille
 
 ![Slice 6(1)](https://github.com/Amalie956/BeSammen/assets/112120321/390d9855-86ae-4cc9-a337-d337c830eb53)
 
+For at pushe din kode skal du først lave et commit og derefter foretage en push, som du får guide til i nedenstående afsnit &darr;.
+
+##### Workflow
+Når du udfører en push, gennemgår dit commit en automatiseret workflow. Dette [workflow](https://github.com/Amalie956/BeSammen/blob/main/.github/workflows/CI-mini.yml) har til formål at kontrollere committen for merge konflikter. Hvis der ikke opstår merge konflikter, bliver din kode pushet til main. Hvis der opstår merge konflikter skal du selv ind i pull request og løse dem. Der er en guide [her](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+
+Vi har iøvrigt også lavet nogle ui test, som ikke er blevet automatiseret endnu, som ses [her](https://github.com/Amalie956/BeSammen/tree/main/app/src/androidTest/java/com/example/besammen/ui). Dem kan du køre ved at trykke 'run'. 
 
 #### 👩‍👩‍👧‍👦Contributors
 I dette team er vi fire medlemmer indtil videre. Alle fra Københavns Erhvervsakademi. Så er du advaret!
 
 Hvis du vil i kontakt med andre i vores team kan du lave et mention ved at bruge `@` plus brugernavnet. Dette vil udløse en notifikation, så kan vedkommende hjælpe dig. Nedenunder kan ses vores brugernavne:
-- [Abdul](https://github.com/Abdu1RH) &rarr; `@Abdu1RH` , IT-Arkitektur studerende
-- [Amalie](https://github.com/Amalie956) &rarr; `@Amalie956`, IT-Arkitektur studerende
-- [Klara](https://github.com/Catlover2200) &rarr; `@Catlover2200`, IT-Arkitektur studerende
-- [Maheen](https://github.com/Mahe0055) &rarr; `@Mahe0055`, IT-Arkitektur studerende
+- [Abdul](https://github.com/Abdu1RH) &rarr; `@Abdu1RH`([Se alle Abduls commits](https://github.com/Amalie956/BeSammen/commits?author=Abdu1RH))
+- [Amalie](https://github.com/Amalie956) &rarr; `@Amalie956` ([Se alle Amalies commits](https://github.com/Amalie956/BeSammen/commits?author=Amalie956))
+- [Klara](https://github.com/Catlover2200) &rarr; `@Catlover2200`([Se alle Klaras commits](https://github.com/Amalie956/BeSammen/commits?author=Catlover2200))
+- [Maheen](https://github.com/Mahe0055) &rarr; `@Mahe0055`([Se alle Maheens commits](https://github.com/Amalie956/BeSammen/commits?author=Mahe0055 ))
