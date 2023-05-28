@@ -3,7 +3,7 @@ package com.example.besammen.domain;
 import android.content.Context;
 import android.text.TextUtils;
 import android.widget.Toast;
-
+//Amalie
 public class UserValidatorService {
     private Context context;
 

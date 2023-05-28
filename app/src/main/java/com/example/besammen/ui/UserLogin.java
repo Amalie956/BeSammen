@@ -13,9 +13,10 @@ import com.example.besammen.domain.UserService;
 import com.example.besammen.domain.UserValidatorService;
 import com.google.android.material.textfield.TextInputEditText;
 
+//Amalie
 public class UserLogin extends AppCompatActivity {
-    UserService userLoginService = new UserService(this);
-    UserValidatorService userLoginValidator = new UserValidatorService(this);
+    private UserService userLoginService = new UserService(this);
+    private UserValidatorService userLoginValidator = new UserValidatorService(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

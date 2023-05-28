@@ -22,14 +22,13 @@ import java.util.Map;
 
 //Abdul
 public class OverviewActivity extends AppCompatActivity {
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
-ImageButton imageButtonProfile;
-ImageButton imageButtonGroupchat;
-ImageButton imageButtonEvents;
-ImageButton imageButtonSettings;
-ImageButton imageButtonPrivateChat;
-ImageButton imageButtonFriends;
-ImageButton imageButtonKnowledge;
+private ImageButton imageButtonProfile;
+private ImageButton imageButtonGroupchat;
+private ImageButton imageButtonEvents;
+private ImageButton imageButtonSettings;
+private ImageButton imageButtonPrivateChat;
+private ImageButton imageButtonFriends;
+private ImageButton imageButtonKnowledge;
 ImageButton imageButtonAsk;
 
     @Override

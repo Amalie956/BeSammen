@@ -19,7 +19,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class MessageRepository {
-    FirebaseDatabase db = FirebaseDatabase.getInstance();
+   private FirebaseDatabase db = FirebaseDatabase.getInstance();
     public void addMessageToChat(ListView listViewForMessages, ArrayList<String> arrayListForMessages, Context context) {
         db.getReference("Messages").addChildEventListener(new ChildEventListener() {
             @Override
