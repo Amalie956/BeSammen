@@ -56,46 +56,46 @@ public class UserEvents extends AppCompatActivity {
         imageButtonBrunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserEvents.this, "Denne begivenhed er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
         imageViewMindfulness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserEvents.this, "Denne begivenhed er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageButtonGroupTherapy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserEvents.this, "Denne begivenhed er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageButtonShoppingMate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserEvents.this, "Denne begivenhed er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
         imageButtonKlatre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserEvents.this, "Denne begivenhed er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
         imageButtonCreative.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserEvents.this, "Denne begivenhed er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageButtonWebinar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserEvents.this, "This event is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserEvents.this, "Denne begivenhed er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
