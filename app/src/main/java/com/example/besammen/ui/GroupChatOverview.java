@@ -60,56 +60,56 @@ public class GroupChatOverview extends AppCompatActivity {
         imageViewWomen1821.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, "This group chat is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Denne gruppechat er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageViewAllWomen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, "This group chat is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Denne gruppechat er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageViewYoungMothers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, "This group chat is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Denne gruppechat er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         admin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, "Admin is currently getting assigned", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Admin er i gang med at blive tildelt", Toast.LENGTH_SHORT).show();
             }
         });
 
         admin2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, "Admin is currently getting assigned", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Admin er i gang med at blive tildelt", Toast.LENGTH_SHORT).show();
             }
         });
 
         moderator1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, "Moderator is currently getting assigned", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Moderatoren er i gang med at blive tildelt", Toast.LENGTH_SHORT).show();
             }
         });
 
         moderator2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, "Moderator is currently getting assigned", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Moderatoren er i gang med at blive tildelt", Toast.LENGTH_SHORT).show();
             }
         });
 
         admin3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(GroupChatOverview.this, " Admin is currently getting assigned", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GroupChatOverview.this, "Admin er i gang med at blive tildelt", Toast.LENGTH_SHORT).show();
             }
         });
 

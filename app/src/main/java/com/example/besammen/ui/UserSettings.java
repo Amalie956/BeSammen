@@ -38,28 +38,28 @@ public class UserSettings extends AppCompatActivity {
         imageForProfileSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserSettings.this, "This setting is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserSettings.this, "Denne indstilling er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageForProfileArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserSettings.this, "This setting is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserSettings.this, "Denne indstilling er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageViewLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserSettings.this, "This setting is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserSettings.this, "Denne indstilling er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageViewDarkMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(UserSettings.this, "This setting is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserSettings.this, "Denne indstilling er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 

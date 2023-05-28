@@ -93,28 +93,28 @@ ImageButton imageButtonAsk;
         imageButtonPrivateChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OverviewActivity.this, "Denne funktion er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageButtonFriends.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OverviewActivity.this, "Denne funktion er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageButtonKnowledge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OverviewActivity.this, "Denne funktion er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
 
         imageButtonAsk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(OverviewActivity.this, "This function is under development", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OverviewActivity.this, "Denne funktion er under udvikling", Toast.LENGTH_SHORT).show();
             }
         });
     }
