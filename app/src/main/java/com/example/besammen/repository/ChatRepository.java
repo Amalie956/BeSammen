@@ -19,9 +19,10 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class ChatRepository extends AppCompatActivity {
-
+    FirebaseDatabase db = FirebaseDatabase.getInstance();
     public void addMessageToChat(ListView listViewForMessages, String username) {
-        FirebaseDatabase db = FirebaseDatabase.getInstance();
+
+
         ArrayList<String> arrayListForMessages = new ArrayList<>();
 
         db.getReference("Messages").addChildEventListener(new ChildEventListener() {
@@ -54,7 +55,6 @@ public class ChatRepository extends AppCompatActivity {
     public void addMessage(String username, String message) {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         Date getDate = Calendar.getInstance().getTime();
-        FirebaseDatabase db = FirebaseDatabase.getInstance();
         db.getReference("Messages").child(auth.getUid() + getDate).setValue(username + "\n" + message);
     }
 }

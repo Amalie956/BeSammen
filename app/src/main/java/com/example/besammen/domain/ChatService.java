@@ -11,6 +11,7 @@ public class ChatService {
 
     public ChatService(Context context) {
         this.chatRepository = new ChatRepository();
+        this.context = context;
     }
 
     public void addMessage(String username, String message) {
