@@ -16,19 +16,20 @@ import com.example.besammen.domain.User;
 import com.example.besammen.domain.UserService;
 import com.google.android.material.textfield.TextInputEditText;
 
+//Amalie
 public class UserRegistration extends AppCompatActivity {
-    String[] items = {"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
-    String[] gender = {"Kvinde", "Mand", "Andet"};
-    String[] diagnosis = {"ADHD"};
-    AutoCompleteTextView autoCompleteTextView;
-    ArrayAdapter<String> adapterItem;
-    UserService userLoginService = new UserService(this);
-    String userEmail;
-    String userPassword;
-    String username;
-    String userAge;
-    String userGender;
-    String userDiagnosis;
+    private String[] items = {"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
+    private String[] gender = {"Kvinde", "Mand", "Andet"};
+    private String[] diagnosis = {"ADHD"};
+    private AutoCompleteTextView autoCompleteTextView;
+    private ArrayAdapter<String> adapterItem;
+    private UserService userLoginService = new UserService(this);
+    private String userEmail;
+    private String userPassword;
+    private String username;
+    private String userAge;
+    private String userGender;
+    private String userDiagnosis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

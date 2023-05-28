@@ -12,16 +12,15 @@ import com.example.besammen.R;
 
 //Abdul
 public class GroupChatOverview extends AppCompatActivity {
-
-    ImageView imageViewGroupChatForAll;
-    ImageView imageViewWomen1821;
-    ImageView imageViewAllWomen;
-    ImageView imageViewYoungMothers;
-    ImageView admin1;
-    ImageView admin2;
-    ImageView moderator1;
-    ImageView moderator2;
-    ImageView admin3;
+    private ImageView imageViewGroupChatForAll;
+    private ImageView imageViewWomen1821;
+    private ImageView imageViewAllWomen;
+    private ImageView imageViewYoungMothers;
+    private ImageView admin1;
+    private ImageView admin2;
+    private ImageView moderator1;
+    private ImageView moderator2;
+    private ImageView admin3;
 
 
     @Override

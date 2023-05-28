@@ -12,7 +12,7 @@ import com.example.besammen.R;
 //Abdul
 public class Event_meet_people extends AppCompatActivity {
 
-    Button participateButton;
+    private Button participateButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

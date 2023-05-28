@@ -40,7 +40,7 @@
     <!--Opret bruger forside-->
     <string name="description_group">Fortæl os om dig selv! Vi vil gerne tildele dig den bedst mulige BeSammen-gruppe</string>
     <string name="create_email">Email</string>
-    <string name="create_password">Kodeord</string>
+    <string name="create_password">Kodeord på mindst 6 tegn</string>
     <string name="switch_nn">Vil du gerne være anonym?</string>
     <string name="choose_username">Vælg dit brugernavn</string>
     <string name="age">Alder</string>

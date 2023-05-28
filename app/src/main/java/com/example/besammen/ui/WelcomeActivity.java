@@ -21,10 +21,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
-//Abdul
+//Abdul og Amalie
 public class WelcomeActivity extends AppCompatActivity {
-    Button button;
-    ImageView imageView;
+    private Button button;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

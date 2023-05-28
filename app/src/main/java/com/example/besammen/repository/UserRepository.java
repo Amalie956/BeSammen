@@ -10,7 +10,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 //Maheen
 public class UserRepository {
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
+   private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     public void storeUserDataInFirestoreDatabase(User user){
         Map<String, Object> hashMap = new HashMap<>();

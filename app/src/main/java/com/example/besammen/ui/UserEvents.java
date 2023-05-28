@@ -15,14 +15,14 @@ import com.example.besammen.R;
 
 //Abdul
 public class UserEvents extends AppCompatActivity {
-    ImageButton imageButtonMeetPeople;
-    ImageButton imageButtonBrunch;
-    ImageView imageViewMindfulness;
-    ImageButton imageButtonGroupTherapy;
-    ImageButton imageButtonShoppingMate;
-    ImageButton imageButtonKlatre;
-    ImageButton imageButtonCreative;
-    ImageButton imageButtonWebinar;
+    private ImageButton imageButtonMeetPeople;
+    private ImageButton imageButtonBrunch;
+    private ImageView imageViewMindfulness;
+    private ImageButton imageButtonGroupTherapy;
+    private ImageButton imageButtonShoppingMate;
+    private ImageButton imageButtonKlatre;
+    private ImageButton imageButtonCreative;
+    private ImageButton imageButtonWebinar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

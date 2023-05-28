@@ -12,8 +12,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
+//Amalie
 public class UserService {
+    private UserRepository userRepository = new UserRepository();
     private UserValidatorService userLoginValidator;
     private Context context;
     private FirebaseAuth firebaseAuth;
@@ -49,7 +50,6 @@ public class UserService {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                UserRepository userRepository = new UserRepository();
                                 userRepository.storeUserDataInFirestoreDatabase(user);
                                 redirectToWelcomeActivity(user.getUserName(), user.getAge());
                                 ((Activity) context).finish();

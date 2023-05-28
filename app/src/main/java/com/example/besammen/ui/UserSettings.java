@@ -14,11 +14,11 @@ import com.example.besammen.R;
 //Abdul
 public class UserSettings extends AppCompatActivity {
 
-    ImageView imageForProfileSettings;
-    ImageView imageViewLanguage;
-    ImageView imageViewDarkMode;
-    ImageView imageForProfileArrow;
-    Button logOutButton;
+    private ImageView imageForProfileSettings;
+    private ImageView imageViewLanguage;
+    private ImageView imageViewDarkMode;
+    private ImageView imageForProfileArrow;
+    private Button logOutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
