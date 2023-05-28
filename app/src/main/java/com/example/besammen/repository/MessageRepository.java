@@ -1,12 +1,12 @@
 package com.example.besammen.repository;
 
+import android.content.Context;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
@@ -18,19 +18,15 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class ChatRepository extends AppCompatActivity {
+public class MessageRepository {
     FirebaseDatabase db = FirebaseDatabase.getInstance();
-    public void addMessageToChat(ListView listViewForMessages, String username) {
-
-
-        ArrayList<String> arrayListForMessages = new ArrayList<>();
-
+    public void addMessageToChat(ListView listViewForMessages, ArrayList<String> arrayListForMessages, Context context) {
         db.getReference("Messages").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 Log.d("Message", "Child added: " + snapshot.getValue().toString());
                 arrayListForMessages.add(snapshot.getValue().toString());
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(ChatRepository.this, android.R.layout.simple_list_item_1, arrayListForMessages);
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(context, android.R.layout.simple_list_item_1, arrayListForMessages);
                 listViewForMessages.setAdapter(adapter);
             }
 

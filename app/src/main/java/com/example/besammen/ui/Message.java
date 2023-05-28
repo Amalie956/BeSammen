@@ -9,7 +9,9 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.besammen.R;
-import com.example.besammen.domain.ChatService;
+import com.example.besammen.domain.MessageService;
+
+import java.util.ArrayList;
 
 public class Message extends AppCompatActivity {
     private ListView listViewForMessages;
@@ -17,7 +19,7 @@ public class Message extends AppCompatActivity {
     private EditText editTextForMessage;
     private String username;
 
-    ChatService chatService = new ChatService(this);
+    MessageService chatService = new MessageService(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,10 @@ public class Message extends AppCompatActivity {
         sendMessageButton = findViewById(R.id.sendMessageButton);
         listViewForMessages = findViewById(R.id.listViewForMessages);
         editTextForMessage = findViewById(R.id.editTextForMessage);
+
+        ArrayList<String> arrayListForMessages = new ArrayList<>();
+
+        chatService.updateDatabase(listViewForMessages, arrayListForMessages);
 
         sendMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override
