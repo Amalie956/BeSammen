@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.besammen.R;
 
 //Abdul
+//Klara layout
 public class GroupChatOverview extends AppCompatActivity {
     private ImageView imageViewGroupChatForAll;
     private ImageView imageViewWomen1821;

@@ -14,6 +14,7 @@ import com.example.besammen.domain.UserValidatorService;
 import com.google.android.material.textfield.TextInputEditText;
 
 //Amalie
+//Klara layout
 public class UserLogin extends AppCompatActivity {
     private UserService userLoginService = new UserService(this);
     private UserValidatorService userLoginValidator = new UserValidatorService(this);

@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.besammen.R;
 
 //Abdul
+//Klara layout
 public class UserEvents extends AppCompatActivity {
     private ImageButton imageButtonMeetPeople;
     private ImageButton imageButtonBrunch;

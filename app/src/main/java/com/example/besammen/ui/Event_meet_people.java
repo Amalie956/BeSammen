@@ -10,7 +10,11 @@ import android.widget.Toast;
 import com.example.besammen.R;
 
 //Abdul
+
+//Klara layout
+
 //Amalie
+
 public class Event_meet_people extends AppCompatActivity {
 
     private Button participateButton;
