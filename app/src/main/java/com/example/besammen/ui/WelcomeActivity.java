@@ -21,7 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
-//Abdul og Amalie
+//Abdul
 public class WelcomeActivity extends AppCompatActivity {
     private Button button;
     private ImageView imageView;
