@@ -22,6 +22,7 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 //Abdul og Amalie
+//Klara layout
 public class WelcomeActivity extends AppCompatActivity {
     private Button button;
     private ImageView imageView;

@@ -17,6 +17,7 @@ import com.example.besammen.domain.UserService;
 import com.google.android.material.textfield.TextInputEditText;
 
 //Amalie
+//Klara layout
 public class UserRegistration extends AppCompatActivity {
     private String[] items = {"18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
     private String[] gender = {"Kvinde", "Mand", "Andet"};

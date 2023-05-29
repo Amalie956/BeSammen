@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //Abdul
+//Klara layout
 public class OverviewActivity extends AppCompatActivity {
 private ImageButton imageButtonProfile;
 private ImageButton imageButtonGroupchat;

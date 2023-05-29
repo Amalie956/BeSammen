@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.example.besammen.R;
 
+//Klara layout
 public class UserProfile extends AppCompatActivity {
 
     @Override

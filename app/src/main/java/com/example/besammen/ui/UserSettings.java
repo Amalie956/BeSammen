@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.besammen.R;
 
 //Abdul
+//Klara layout
 public class UserSettings extends AppCompatActivity {
 
     private ImageView imageForProfileSettings;
