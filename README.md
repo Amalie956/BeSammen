@@ -25,7 +25,8 @@ https://github.com/Amalie956/BeSammen/assets/112120321/1c13e423-ae4d-423f-b698-8
   
 </details>
 
-Projektets rapport kan findes her (link til vores rapport)
+Projektets rapport kan findes her [BeSammen Projekt](https://github.com/Amalie956/BeSammen/files/11590776/BeSammen.Projekt.pdf)
+
 
 #### 👩‍👩‍👧‍👦Contributors
 I dette team er vi fire medlemmer indtil videre. Alle fra Københavns Erhvervsakademi. Så er du advaret!
