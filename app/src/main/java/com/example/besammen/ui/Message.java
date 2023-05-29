@@ -13,6 +13,8 @@ import com.example.besammen.domain.MessageService;
 
 import java.util.ArrayList;
 
+//Abdul
+//Amalie
 public class Message extends AppCompatActivity {
     private ListView listViewForMessages;
     private Button sendMessageButton;

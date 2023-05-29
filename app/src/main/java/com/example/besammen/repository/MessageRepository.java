@@ -18,6 +18,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+//Abdul
+//Amalie
+
 public class MessageRepository {
    private FirebaseDatabase db = FirebaseDatabase.getInstance();
     public void addMessageToChat(ListView listViewForMessages, ArrayList<String> arrayListForMessages, Context context) {
